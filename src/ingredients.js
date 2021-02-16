@@ -1,5 +1,5 @@
 /* eslint-disable indent */
-export const data = [
+export default  data = [
     {
         "id": 1,
         "name": "apple",
