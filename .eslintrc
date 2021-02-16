@@ -8,11 +8,11 @@
     "es6": true,
     "browser": true,
     "jquery": true,
-    "node": true,
-    "jest/globals": true
+    "node": true
   },
   "rules":{
     "semi": 1,
-    "indent":["warn",2]
+    "indent":["warn",2],
+    "no-unused-vars": "warn"
   }
 }

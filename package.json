@@ -1,7 +1,7 @@
 {
-  "name": "",
+  "name": "BOTW-RecipeBook",
   "version": "1.0.0",
-  "description": "",
+  "description": "#### _Description_",
   "main": "main.js",
   "scripts": {
     "build": "webpack --mode development",
@@ -33,5 +33,13 @@
     "bootstrap": "^4.6.0",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimwoojin211/BOTW-RecipeBook.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kimwoojin211/BOTW-RecipeBook/issues"
+  },
+  "homepage": "https://github.com/kimwoojin211/BOTW-RecipeBook#readme"
 }
