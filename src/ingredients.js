@@ -9,7 +9,8 @@ export const data = [
             "East Necluda"
         ],
         "hearts_recovered": 0.5,
-        "cooking_effect": ""
+        "cooking_effect": "",
+        "category": "natural-materials"
     },
     {
         "id": 2,
@@ -20,7 +21,8 @@ export const data = [
             "Gerudo Desert"
         ],
         "hearts_recovered": 1.0,
-        "cooking_effect": ""
+        "cooking_effect": "",
+        "category": "natural-materials"
     },
     {
         "id": 3,
@@ -31,7 +33,8 @@ export const data = [
             "Hebra Mountains"
         ],
         "hearts_recovered": 0.5,
-        "cooking_effect": ""
+        "cooking_effect": "",
+        "category": "natural-materials"
     },
     {
         "id": 4,
@@ -42,7 +45,8 @@ export const data = [
             "Faron Grasslands"
         ],
         "hearts_recovered": 3.0,
-        "cooking_effect": "extra hearts"
+        "cooking_effect": "extra hearts",
+        "category": "natural-materials"
     },
     {
         "id": 5,
@@ -53,7 +57,8 @@ export const data = [
             "Faron Grasslands"
         ],
         "hearts_recovered": 0.5,
-        "cooking_effect": "heat resistance"
+        "cooking_effect": "heat resistance",
+        "category": "natural-materials"
     },
     {
         "id": 6,
@@ -64,7 +69,8 @@ export const data = [
             "Tabantha Frontier"
         ],
         "hearts_recovered": 0.5,
-        "cooking_effect": "cold resistance"
+        "cooking_effect": "cold resistance",
+        "category": "natural-materials"
     },
     {
         "id": 7,
@@ -75,7 +81,8 @@ export const data = [
             "Gerudo Highlands"
         ],
         "hearts_recovered": 0.5,
-        "cooking_effect": "shock resistance"
+        "cooking_effect": "shock resistance",
+        "category": "natural-materials"
     },
     {
         "id": 8,
@@ -86,7 +93,8 @@ export const data = [
             "Lanayru Great Spring"
         ],
         "hearts_recovered": 0.5,
-        "cooking_effect": "speed up"
+        "cooking_effect": "speed up",
+        "category": "natural-materials"
     },
     {
         "id": 9,
@@ -96,7 +104,8 @@ export const data = [
             "Faron"
         ],
         "hearts_recovered": 0.5,
-        "cooking_effect": "attack up"
+        "cooking_effect": "attack up",
+        "category": "natural-materials"
     },
     {
         "id": 10,
@@ -107,7 +116,8 @@ export const data = [
             "West Necluda"
         ],
         "hearts_recovered": 0.5,
-        "cooking_effect": ""
+        "cooking_effect": "",
+        "category": "natural-materials"
     },
     {
         "id": 11,
@@ -118,7 +128,8 @@ export const data = [
             "Hyrule Field"
         ],
         "hearts_recovered": 1.0,
-        "cooking_effect": "extra stamina"
+        "cooking_effect": "extra stamina",
+        "category": "natural-materials"
     },
     {
         "id": 12,
@@ -129,7 +140,8 @@ export const data = [
             "Hyrule Field"
         ],
         "hearts_recovered": 0.5,
-        "cooking_effect": "stamina recovery"
+        "cooking_effect": "stamina recovery",
+        "category": "natural-materials"
     },
     {
         "id": 13,
@@ -140,7 +152,8 @@ export const data = [
             "Hyrule Field"
         ],
         "hearts_recovered": 2.0,
-        "cooking_effect": "extra hearts"
+        "cooking_effect": "extra hearts",
+        "category": "natural-materials"
     },
     {
         "id": 14,
@@ -151,7 +164,8 @@ export const data = [
             "Great Hyrule Forest"
         ],
         "hearts_recovered": 3.0,
-        "cooking_effect": "extra hearts"
+        "cooking_effect": "extra hearts",
+        "category": "natural-materials"
     },
     {
         "id": 15,
@@ -162,7 +176,8 @@ export const data = [
             "Mount Lanayru"
         ],
         "hearts_recovered": 0.5,
-        "cooking_effect": "heat resistance"
+        "cooking_effect": "heat resistance",
+        "category": "natural-materials"
     },
     {
         "id": 16,
@@ -173,7 +188,8 @@ export const data = [
             "Gerudo Highlands"
         ],
         "hearts_recovered": 0.5,
-        "cooking_effect": "cold resistance"
+        "cooking_effect": "cold resistance",
+        "category": "natural-materials"
     },
     {
         "id": 17,
@@ -184,7 +200,8 @@ export const data = [
             "Gerudo Highlands"
         ],
         "hearts_recovered": 0.5,
-        "cooking_effect": "shock resistance"
+        "cooking_effect": "shock resistance",
+        "category": "natural-materials"
     },
     {
         "id": 18,
@@ -195,7 +212,8 @@ export const data = [
             "Hyrule Ridge"
         ],
         "hearts_recovered": 0.5,
-        "cooking_effect": "speed up"
+        "cooking_effect": "speed up",
+        "category": "natural-materials"
     },
     {
         "id": 19,
@@ -206,7 +224,8 @@ export const data = [
             "Tabantha Frontier"
         ],
         "hearts_recovered": 0.5,
-        "cooking_effect": "attack up"
+        "cooking_effect": "attack up",
+        "category": "natural-materials"
     },
     {
         "id": 20,
@@ -217,7 +236,8 @@ export const data = [
             "East Necluda"
         ],
         "hearts_recovered": 0.5,
-        "cooking_effect": "defense up"
+        "cooking_effect": "defense up",
+        "category": "natural-materials"
     },
     {
         "id": 21,
@@ -228,7 +248,8 @@ export const data = [
             "West Necluda"
         ],
         "hearts_recovered": 0.5,
-        "cooking_effect": "stealth up"
+        "cooking_effect": "stealth up",
+        "category": "natural-materials"
     },
     {
         "id": 22,
@@ -239,7 +260,8 @@ export const data = [
             "Akkala Highlands"
         ],
         "hearts_recovered": 1.0,
-        "cooking_effect": ""
+        "cooking_effect": "",
+        "category": "natural-materials"
     },
     {
         "id": 23,
@@ -250,7 +272,8 @@ export const data = [
             "East Necluda"
         ],
         "hearts_recovered": 20.5,
-        "cooking_effect": "extra hearts"
+        "cooking_effect": "extra hearts",
+        "category": "natural-materials"
     },
     {
         "id": 24,
@@ -261,7 +284,8 @@ export const data = [
             "Lanayru Great Spring"
         ],
         "hearts_recovered": 4.0,
-        "cooking_effect": "extra hearts"
+        "cooking_effect": "extra hearts",
+        "category": "natural-materials"
     },
     {
         "id": 25,
@@ -272,7 +296,8 @@ export const data = [
             "Gerudo Highlands"
         ],
         "hearts_recovered": 0.0,
-        "cooking_effect": "heat resistance"
+        "cooking_effect": "heat resistance",
+        "category": "natural-materials"
     },
     {
         "id": 26,
@@ -283,7 +308,8 @@ export const data = [
             "Hyrule Ridge"
         ],
         "hearts_recovered": 0.0,
-        "cooking_effect": "cold resistance"
+        "cooking_effect": "cold resistance",
+        "category": "natural-materials"
     },
     {
         "id": 27,
@@ -294,7 +320,8 @@ export const data = [
             "Hyrule Ridge"
         ],
         "hearts_recovered": 0.0,
-        "cooking_effect": "shock resistance"
+        "cooking_effect": "shock resistance",
+        "category": "natural-materials"
     },
     {
         "id": 28,
@@ -304,7 +331,8 @@ export const data = [
             "Kakariko Village"
         ],
         "hearts_recovered": 0.5,
-        "cooking_effect": "speed up"
+        "cooking_effect": "speed up",
+        "category": "natural-materials"
     },
     {
         "id": 29,
@@ -315,7 +343,8 @@ export const data = [
             "Faron Grasslands"
         ],
         "hearts_recovered": 2.0,
-        "cooking_effect": "extra stamina"
+        "cooking_effect": "extra stamina",
+        "category": "natural-materials"
     },
     {
         "id": 30,
@@ -325,7 +354,8 @@ export const data = [
             "Kakariko Village"
         ],
         "hearts_recovered": 0.5,
-        "cooking_effect": "defense up"
+        "cooking_effect": "defense up",
+        "category": "natural-materials"
     },
     {
         "id": 31,
@@ -336,7 +366,8 @@ export const data = [
             "Hebra Mountains"
         ],
         "hearts_recovered": 0.0,
-        "cooking_effect": "speed up"
+        "cooking_effect": "speed up",
+        "category": "natural-materials"
     },
     {
         "id": 32,
@@ -347,7 +378,8 @@ export const data = [
             "Faron Grasslands"
         ],
         "hearts_recovered": 0.0,
-        "cooking_effect": "attack up"
+        "cooking_effect": "attack up",
+        "category": "natural-materials"
     },
     {
         "id": 33,
@@ -358,7 +390,8 @@ export const data = [
             "Hyrule Ridge"
         ],
         "hearts_recovered": 0.0,
-        "cooking_effect": "defense up"
+        "cooking_effect": "defense up",
+        "category": "natural-materials"
     },
     {
         "id": 34,
@@ -369,7 +402,8 @@ export const data = [
             "Lanayru Great Spring"
         ],
         "hearts_recovered": 0.0,
-        "cooking_effect": "stealth up"
+        "cooking_effect": "stealth up",
+        "category": "natural-materials"
     },
     {
         "id": 35,
@@ -380,37 +414,44 @@ export const data = [
             "West Necluda"
         ],
         "hearts_recovered": 0.0,
-        "cooking_effect": "stealth up"
+        "cooking_effect": "stealth up",
+        "category": "natural-materials"
     },
     {
         "id": 36,
         "name": "raw meat",
-        "description": "Meat obtained from animals in plains and forests. You can eat it raw, but cooking it will make it more delicious and nutritious."
+        "description": "Meat obtained from animals in plains and forests. You can eat it raw, but cooking it will make it more delicious and nutritious.",
+        "category": "natural-materials"
     },
     {
         "id": 37,
         "name": "raw prime meat",
-        "description": "A fresh, high-quality piece of animal meat. This stuff isn't easy to come by, so savor it. Cook it to recover more hearts."
+        "description": "A fresh, high-quality piece of animal meat. This stuff isn't easy to come by, so savor it. Cook it to recover more hearts.",
+        "category": "natural-materials"
     },
     {
         "id": 38,
         "name": "raw gourmet meat",
-        "description": "This prized cut of meat is usually from a large animal. Any connoisseur would rank this tender, juicy cut of meat \"gourmet.\" Expect an exquisite meal when cooking with this."
+        "description": "This prized cut of meat is usually from a large animal. Any connoisseur would rank this tender, juicy cut of meat \"gourmet.\" Expect an exquisite meal when cooking with this.",
+        "category": "natural-materials"
     },
     {
         "id": 39,
         "name": "raw bird drumstick",
-        "description": "This meat is tougher and chewier than a standard steak. Tastes better cooked."
+        "description": "This meat is tougher and chewier than a standard steak. Tastes better cooked.",
+        "category": "natural-materials"
     },
     {
         "id": 40,
         "name": "raw bird thigh",
-        "description": "A high-quality piece of meat that's hard to come by. You can eat it raw, but cooking it first will recover more hearts."
+        "description": "A high-quality piece of meat that's hard to come by. You can eat it raw, but cooking it first will recover more hearts.",
+        "category": "natural-materials"
     },
     {
         "id": 41,
         "name": "raw whole bird",
-        "description": "This prized meat can be obtained from certain birds. It gets full points for flavor, nutrition, and volume. It pairs perfectly with other ingredients or can be enjoyed alone."
+        "description": "This prized meat can be obtained from certain birds. It gets full points for flavor, nutrition, and volume. It pairs perfectly with other ingredients or can be enjoyed alone.",
+        "category": "natural-materials"
     },
     {
         "id": 42,
@@ -421,57 +462,68 @@ export const data = [
             "Tabantha Frontier"
         ],
         "hearts_recovered": 2.0,
-        "cooking_effect": "stamina recovery"
+        "cooking_effect": "stamina recovery",
+        "category": "natural-materials"
     },
     {
         "id": 43,
         "name": "hylian rice",
-        "description": "This grain is the favorite among residents of Kakariko Village. It's grown in regions with a lot of water and is quite versatile. Used as an ingredient in things like risotto and rice balls."
+        "description": "This grain is the favorite among residents of Kakariko Village. It's grown in regions with a lot of water and is quite versatile. Used as an ingredient in things like risotto and rice balls.",
+        "category": "natural-materials"
     },
     {
         "id": 44,
         "name": "bird egg",
-        "description": "A fresh bird egg necessary for making dishes such as omelets or crepes. You can snag them from birds' nests if you're sneaky. Nutritious and delicious, perfect for cooking."
+        "description": "A fresh bird egg necessary for making dishes such as omelets or crepes. You can snag them from birds' nests if you're sneaky. Nutritious and delicious, perfect for cooking.",
+        "category": "natural-materials"
     },
     {
         "id": 45,
         "name": "tabantha wheat",
-        "description": "This grain is cultivated extensively on the Tabantha Plains. It's ground finely with a millstone to be used in cooking. Use it to make things such as stews and breads."
+        "description": "This grain is cultivated extensively on the Tabantha Plains. It's ground finely with a millstone to be used in cooking. Use it to make things such as stews and breads.",
+        "category": "natural-materials"
     },
     {
         "id": 46,
         "name": "acorn",
-        "description": "Often found on the ground near trees. Squirrels adore this nut, so you may have competition while foraging. Add one to a meal for a nutty seasoning."
+        "description": "Often found on the ground near trees. Squirrels adore this nut, so you may have competition while foraging. Add one to a meal for a nutty seasoning.",
+        "category": "natural-materials"
     },
     {
         "id": 47,
         "name": "chickaloo tree nut",
-        "description": "Small birds love this nut. You can eat it raw for a minor effect, but it can also be added as a spice to other recipes."
+        "description": "Small birds love this nut. You can eat it raw for a minor effect, but it can also be added as a spice to other recipes.",
+        "category": "natural-materials"
     },
     {
         "id": 48,
         "name": "cane sugar",
-        "description": "When boiled with other ingredients, the cane breaks down into a sweet juice necessary for making cakes and other sweets. It's commonly found in ingredients stores."
+        "description": "When boiled with other ingredients, the cane breaks down into a sweet juice necessary for making cakes and other sweets. It's commonly found in ingredients stores.",
+        "category": "natural-materials"
     },
     {
         "id": 49,
         "name": "goat butter",
-        "description": "Butter made from the milk of a domesticated white goat. In addition to being used in dishes like stews and meunière, it's often used when making cakes and other sweets."
+        "description": "Butter made from the milk of a domesticated white goat. In addition to being used in dishes like stews and meunière, it's often used when making cakes and other sweets.",
+        "category": "natural-materials"
     },
     {
         "id": 50,
         "name": "fresh milk",
-        "description": "This fresh milk comes from Hateno cows and white goats kept in the village. It's delicious on its own but can also be used as an ingredient in soups and stews."
+        "description": "This fresh milk comes from Hateno cows and white goats kept in the village. It's delicious on its own but can also be used as an ingredient in soups and stews.",
+        "category": "natural-materials"
     },
     {
         "id": 51,
         "name": "goron spice",
-        "description": "Made from several types of spices, this secret Goron seasoning has been handed down for generations. An initial wave of spiciness paves the way for sweetness."
+        "description": "Made from several types of spices, this secret Goron seasoning has been handed down for generations. An initial wave of spiciness paves the way for sweetness.",
+        "category": "natural-materials"
     },
     {
         "id": 52,
         "name": "monster extract",
-        "description": "A result of Kilton's research into monsters, this suspicious spice can be used to punch up dishes while cooking. Apparently it can be used to make a number of monstrous meals."
+        "description": "A result of Kilton's research into monsters, this suspicious spice can be used to punch up dishes while cooking. Apparently it can be used to make a number of monstrous meals.",
+        "category": "natural-materials"
     },
     {
         "id": 53,
@@ -481,483 +533,579 @@ export const data = [
     {
         "id": 54,
         "name": "staminoka bass",
-        "description": "This Hyrule bass got to be the biggest fish by never getting caught (until now). Its long life results in a cooked dish that will restore a lot of stamina."
+        "description": "This Hyrule bass got to be the biggest fish by never getting caught (until now). Its long life results in a cooked dish that will restore a lot of stamina.",
+        "category": "creatures"
     },
     {
         "id": 55,
         "name": "hearty bass",
-        "description": "This large fish lives near the shoreline. Its sizable body can store a lot of nutrients. When cooked into a dish, it will temporarily increase your maximum hearts."
+        "description": "This large fish lives near the shoreline. Its sizable body can store a lot of nutrients. When cooked into a dish, it will temporarily increase your maximum hearts.",
+        "category": "creatures"
     },
     {
         "id": 56,
         "name": "chillfin trout",
-        "description": "This blue trout prefers cold bodies of water. Its skin contains enzymes that keep its body cool, and when cooked into a dish, it will temporarily boost your heat resistance."
+        "description": "This blue trout prefers cold bodies of water. Its skin contains enzymes that keep its body cool, and when cooked into a dish, it will temporarily boost your heat resistance.",
+        "category": "creatures"
     },
     {
         "id": 57,
         "name": "voltfin trout",
-        "description": "This trout makes its home in the freshwater lakes. Its scales have an insulating compound that, when cooked into a dish, offers resistance to electricity."
+        "description": "This trout makes its home in the freshwater lakes. Its scales have an insulating compound that, when cooked into a dish, offers resistance to electricity.",
+        "category": "creatures"
     },
     {
         "id": 58,
         "name": "sizzlefin trout",
-        "description": "This red trout prefers warm bodies of water. It has a special organ specifically for storing heat. When cooked into a dish, it will temporarily increase your resistance to the cold."
+        "description": "This red trout prefers warm bodies of water. It has a special organ specifically for storing heat. When cooked into a dish, it will temporarily increase your resistance to the cold.",
+        "category": "creatures"
     },
     {
         "id": 59,
         "name": "stealthfin trout",
-        "description": "Consuming the bioluminescent compound that makes this fish glow in the dark will increase concentration. Dishes cooked with it will suppress noise when consumed."
+        "description": "Consuming the bioluminescent compound that makes this fish glow in the dark will increase concentration. Dishes cooked with it will suppress noise when consumed.",
+        "category": "creatures"
     },
     {
         "id": 60,
         "name": "hearty salmon",
-        "description": "This fish makes its home in cold water, giving it extra layers of fat. It temporarily increases your maximum hearts when used in cooking."
+        "description": "This fish makes its home in cold water, giving it extra layers of fat. It temporarily increases your maximum hearts when used in cooking.",
+        "category": "creatures"
     },
     {
         "id": 61,
         "name": "mighty carp",
-        "description": "This freshwater fish lives alongside its less mighty carp ilk. A compound in its liver promotes muscle growth. Dishes cooked with it will temporarily increase your attack power."
+        "description": "This freshwater fish lives alongside its less mighty carp ilk. A compound in its liver promotes muscle growth. Dishes cooked with it will temporarily increase your attack power.",
+        "category": "creatures"
     },
     {
         "id": 62,
         "name": "armored carp",
-        "description": "Calcium deposits in the scales of this ancient fish make them as hard as armor. Cooking it into a dish will fortify your bones, temporarily increasing your defense."
+        "description": "Calcium deposits in the scales of this ancient fish make them as hard as armor. Cooking it into a dish will fortify your bones, temporarily increasing your defense.",
+        "category": "creatures"
     },
     {
         "id": 63,
         "name": "sanke carp",
-        "description": "This wild armored carp has been bred into a prizewinning fish. Its beautifully colored markings do not occur in nature. It offers no special effects when cooked."
+        "description": "This wild armored carp has been bred into a prizewinning fish. Its beautifully colored markings do not occur in nature. It offers no special effects when cooked.",
+        "category": "creatures"
     },
     {
         "id": 64,
         "name": "mighty porgy",
-        "description": "This ocean-dwelling fish comes with one rude attitude. The compounds in its flesh elevate your competitive spirit when it's cooked into a dish, thus increasing your attack power."
+        "description": "This ocean-dwelling fish comes with one rude attitude. The compounds in its flesh elevate your competitive spirit when it's cooked into a dish, thus increasing your attack power.",
+        "category": "creatures"
     },
     {
         "id": 65,
         "name": "armored porgy",
-        "description": "This porgy's body is covered in armor-hard scales. The compounds in its scales, when cooked into a dish, fortify your bones and temporarily boost your defense."
+        "description": "This porgy's body is covered in armor-hard scales. The compounds in its scales, when cooked into a dish, fortify your bones and temporarily boost your defense.",
+        "category": "creatures"
     },
     {
         "id": 66,
         "name": "sneaky river snail",
-        "description": "This large, glow-in-the-dark snail lives in fresh water. When cooked into a dish, it heightens your senses so you can move about silently."
+        "description": "This large, glow-in-the-dark snail lives in fresh water. When cooked into a dish, it heightens your senses so you can move about silently.",
+        "category": "creatures"
     },
     {
         "id": 67,
         "name": "hearty blueshell snail",
-        "description": "This snail lives on sandy beaches in large numbers. Its flesh contains a high amount of stimulants, so when cooked into a dish, it temporarily increases your maximum hearts."
+        "description": "This snail lives on sandy beaches in large numbers. Its flesh contains a high amount of stimulants, so when cooked into a dish, it temporarily increases your maximum hearts.",
+        "category": "creatures"
     },
     {
         "id": 68,
         "name": "razorclaw clam",
-        "description": "This crab is well known for its exceptionally sharp pincers. When cooked, the strength compound in its claws will increase your attack power."
+        "description": "This crab is well known for its exceptionally sharp pincers. When cooked, the strength compound in its claws will increase your attack power.",
+        "category": "creatures"
     },
     {
         "id": 69,
         "name": "ironshell crab",
-        "description": "This crab's shell is particularly hard. When cooked into dish, its fat and meat bolster the body to increase your defense."
+        "description": "This crab's shell is particularly hard. When cooked into dish, its fat and meat bolster the body to increase your defense.",
+        "category": "creatures"
     },
     {
         "id": 70,
         "name": "bright-eyed crab",
-        "description": "This crab appears in large numbers when it rains. Once bite of its delectable meat, and you'll forget all your exhaustion. Replenishes your stamina when cooked into a dish."
+        "description": "This crab appears in large numbers when it rains. Once bite of its delectable meat, and you'll forget all your exhaustion. Replenishes your stamina when cooked into a dish.",
+        "category": "creatures"
     },
     {
         "id": 71,
         "name": "winterwing butterly",
-        "description": "The powdery scales of this butterfly's wings cool the air around it. Watching it flutter around snowflakes is a thing of beauty. Cook it with monster parts for a heat-resistant elixir."
+        "description": "The powdery scales of this butterfly's wings cool the air around it. Watching it flutter around snowflakes is a thing of beauty. Cook it with monster parts for a heat-resistant elixir.",
+        "category": "creatures"
     },
     {
         "id": 72,
         "name": "summerwing butterly",
-        "description": "The powdery scales of this butterfly's wings cool the air around it. Watching it flutter around snowflakes is a thing of beauty. Cook it with monster parts for a heat-resistant elixir."
+        "description": "The powdery scales of this butterfly's wings cool the air around it. Watching it flutter around snowflakes is a thing of beauty. Cook it with monster parts for a heat-resistant elixir.",
+        "category": "creatures"
     },
     {
         "id": 73,
         "name": "thunderwing butterly",
-        "description": "This rare butterfly only shows itself when it rains. The organs in its body produce an insulating compound. When made into an elixir, it offers electrical resistance."
+        "description": "This rare butterfly only shows itself when it rains. The organs in its body produce an insulating compound. When made into an elixir, it offers electrical resistance.",
+        "category": "creatures"
     },
     {
         "id": 74,
         "name": "smotherwing butterly",
-        "description": "This rare butterfly lives in volcanic regions. Its body contains a heat-resistant liquid, which can be turned into a topical elixir that offers resistance to flames."
+        "description": "This rare butterfly lives in volcanic regions. Its body contains a heat-resistant liquid, which can be turned into a topical elixir that offers resistance to flames.",
+        "category": "creatures"
     },
     {
         "id": 75,
         "name": "cold darner",
-        "description": "This dragonfly prefers the cool shade of trees to the warmth of the sun. Its wings disperse heat from its body, which can be cooked into a heat-resistance elixir."
+        "description": "This dragonfly prefers the cool shade of trees to the warmth of the sun. Its wings disperse heat from its body, which can be cooked into a heat-resistance elixir.",
+        "category": "creatures"
 
     },
     {
         "id": 76,
         "name": "warm darner",
-        "description": "This dragonfly has a special organ that causes it to sweat profusely. Cook it with monster parts for an elixir that will raise your core temperature so you can resist the cold."
+        "description": "This dragonfly has a special organ that causes it to sweat profusely. Cook it with monster parts for an elixir that will raise your core temperature so you can resist the cold.",
+        "category": "creatures"
     },
     {
         "id": 77,
         "name": "electric darner",
-        "description": "This rare dragonfly only appears in the rain. Its wings direct electricity away from its body. Cook it with monster parts for an electricity-resistance elixir."
+        "description": "This rare dragonfly only appears in the rain. Its wings direct electricity away from its body. Cook it with monster parts for an electricity-resistance elixir.",
+        "category": "creatures"
     },
     {
         "id": 78,
         "name": "bladed rhino beetle",
-        "description": "This beetle's razor-sharp horns demand that you handle it with care. Boil the horns alongside monster parts to concoct an elixir that will raise your attack power."
+        "description": "This beetle's razor-sharp horns demand that you handle it with care. Boil the horns alongside monster parts to concoct an elixir that will raise your attack power.",
+        "category": "creatures"
     },
     {
         "id": 79,
         "name": "rugged rhino beetle",
-        "description": "This beetle's hard body resembles armor. When the shell is cooked with monster parts, the resulting elixir boosts your defense."
+        "description": "This beetle's hard body resembles armor. When the shell is cooked with monster parts, the resulting elixir boosts your defense.",
+        "category": "creatures"
     },
     {
         "id": 80,
         "name": "energetic rhino beetle",
         "description": "This valuable beetle can live up to ten years. When cooked with monster parts, its impressive vitality translates into an elixir that will greatly restore your stamina.",
+        "category": "creatures"
     },
     {
         "id": 81,
         "name": "restless cricket",
-        "description": "A very energetic cricket. Cook it with monster parts to create a stamina-recovery elixir."
+        "description": "A very energetic cricket. Cook it with monster parts to create a stamina-recovery elixir.",
+        "category": "creatures"
     },
     {
         "id": 82,
         "name": "sunset firefly",
-        "description": "These fireflies glow gently in the dark. When cooked with monster parts, the compound that causes it to glow results in an elixir that will allow you to move more quietly."
+        "description": "These fireflies glow gently in the dark. When cooked with monster parts, the compound that causes it to glow results in an elixir that will allow you to move more quietly.",
+        "category": "creatures"
     },
     {
         "id": 83,
         "name": "hot-footed frog",
-        "description": "A quick frog that can be found hopping around near water. Cook it with monster parts to draw out its speed-boost effect."
+        "description": "A quick frog that can be found hopping around near water. Cook it with monster parts to draw out its speed-boost effect.",
+        "category": "creatures"
     },
     {
         "id": 84,
         "name": "tireless frog",
-        "description": "This rare frog only ventures out in the rain. When cooked with monster parts, the elixir it produces will temporarily increase your maximum stamina."
+        "description": "This rare frog only ventures out in the rain. When cooked with monster parts, the elixir it produces will temporarily increase your maximum stamina.",
+        "category": "creatures"
     },
     {
         "id": 85,
         "name": "hightail lizard",
-        "description": "A lizard found throughout Hyrule. It's a but slow to react at times, but it given a chance to escape, it will dart off quickly. Cook it with monster parts for a speed-boosting elixir."
+        "description": "A lizard found throughout Hyrule. It's a but slow to react at times, but it given a chance to escape, it will dart off quickly. Cook it with monster parts for a speed-boosting elixir.",
+        "category": "creatures"
     },
     {
         "id": 86,
         "name": "hearty lizard",
-        "description": "This rare lizard lives deep in the forests. It feeds on high-nutrient foods, giving it great vitality. When used to make elixirs, they temporarily increase your maximum hearts."
+        "description": "This rare lizard lives deep in the forests. It feeds on high-nutrient foods, giving it great vitality. When used to make elixirs, they temporarily increase your maximum hearts.",
+        "category": "creatures"
     },
     {
         "id": 87,
         "name": "fireproof lizard",
-        "description": "This rare lizard can only be found in the Eldin region. Its scales have heat-resistant properties, so when cooked with monster parts it produces a heat-resistance elixir."
+        "description": "This rare lizard can only be found in the Eldin region. Its scales have heat-resistant properties, so when cooked with monster parts it produces a heat-resistance elixir.",
+        "category": "creatures"
     },
     {
         "id": 88,
         "name": "fairy",
-        "description": "This fairy will fly from your pouch and heal all your wounds the moment you lose your last heart. It's easily mistaken for a firefly at first, but it glows in the daylight as well as night."
+        "description": "This fairy will fly from your pouch and heal all your wounds the moment you lose your last heart. It's easily mistaken for a firefly at first, but it glows in the daylight as well as night.",
+        "category": "creatures"
     },
     {
         "id": 89,
         "name": "bokoblin horn",
-        "description": "The severed horn of a Bokoblin, a creature often encountered on the plains of Hyrule. It isn't edible, but it can be tossed into a stew with some critters to make an elixir."
+        "description": "The severed horn of a Bokoblin, a creature often encountered on the plains of Hyrule. It isn't edible, but it can be tossed into a stew with some critters to make an elixir.",
+        "category": "monster-parts"
     },
     {
         "id": 90,
         "name": "bokoblin fang",
-        "description": "A tooth obtained from a Bokoblin. It's worn down and not very sharp, but it's still pretty hard. Cook it alongside a critter to make an elixir."
+        "description": "A tooth obtained from a Bokoblin. It's worn down and not very sharp, but it's still pretty hard. Cook it alongside a critter to make an elixir.",
+        "category": "monster-parts"
     },
     {
         "id": 91,
         "name": "bokoblin guts",
-        "description": "A rare material obtained by defeating a Bokoblin. It convulses on its own every now and then, which is really creepy, but perhaps it has a use."
+        "description": "A rare material obtained by defeating a Bokoblin. It convulses on its own every now and then, which is really creepy, but perhaps it has a use.",
+        "category": "monster-parts"
     },
     {
         "id": 92,
         "name": "moblin horn",
-        "description": "This splendid horn once grew atop the head of a Moblin. It can't be used in normal food recipes, but it does have some use as an ingredient in making elixirs."
+        "description": "This splendid horn once grew atop the head of a Moblin. It can't be used in normal food recipes, but it does have some use as an ingredient in making elixirs.",
+        "category": "monster-parts"
     },
     {
         "id": 93,
         "name": "moblin fang",
-        "description": "A sharp fang obtained from a Moblin. It's too hard to be reshaped into a tool, but it can be tossed into a stew with some critters to create elixirs."
+        "description": "A sharp fang obtained from a Moblin. It's too hard to be reshaped into a tool, but it can be tossed into a stew with some critters to create elixirs.",
+        "category": "monster-parts"
     },
     {
         "id": 94,
         "name": "moblin guts",
-        "description": "This prized ingredient can be obtained from Moblins. Its odor is too pungent for normal food preparation, but stew it with some critters to make elixirs."
+        "description": "This prized ingredient can be obtained from Moblins. Its odor is too pungent for normal food preparation, but stew it with some critters to make elixirs.",
+        "category": "monster-parts"
     },
     {
         "id": 95,
         "name": "lizalfos horn",
-        "description": "This winding horn once grew atop the head of a Lizalfos. It's too hard to use for cooking, but stores are willing to buy it from you. It can also be used to make elixirs."
+        "description": "This winding horn once grew atop the head of a Lizalfos. It's too hard to use for cooking, but stores are willing to buy it from you. It can also be used to make elixirs.",
+        "category": "monster-parts"
     },
     {
         "id": 96,
         "name": "lizalfos talon",
-        "description": "This talon once grew from the elbow of a Lizalfos. You can stew it with critters to make elixirs, but it may have some other uses, as well."
+        "description": "This talon once grew from the elbow of a Lizalfos. You can stew it with critters to make elixirs, but it may have some other uses, as well.",
+        "category": "monster-parts"
     },
     {
         "id": 97,
         "name": "lizalfos tail",
-        "description": "The severed tail of a Lizalfos. It continues to wriggle even after being separated from its body. That kind of vitality makes it highly valued as an ingredient in elixirs."
+        "description": "The severed tail of a Lizalfos. It continues to wriggle even after being separated from its body. That kind of vitality makes it highly valued as an ingredient in elixirs.",
+        "category": "monster-parts"
     },
     {
         "id": 98,
         "name": "red lizalfos tail",
-        "description": "The severed tail of a Fire-Breath Lizalfos. Its flavor makes the flesh inedible, but toss it into a stew with some critters, and you'll have yourself a nice elixir."
+        "description": "The severed tail of a Fire-Breath Lizalfos. Its flavor makes the flesh inedible, but toss it into a stew with some critters, and you'll have yourself a nice elixir.",
+        "category": "monster-parts"
     },
     {
         "id": 99,
         "name": "icy lizalfos tail",
-        "description": "The severed tail of an Ice-Breath Lizalfos. Its hard scales and flesh make it unsuitable for cooking, but it's perfect for making elixirs."
+        "description": "The severed tail of an Ice-Breath Lizalfos. Its hard scales and flesh make it unsuitable for cooking, but it's perfect for making elixirs.",
+        "category": "monster-parts"
     },
     {
         "id": 100,
         "name": "yellow lizalfos tail",
-        "description": "The severed tail of an Electric Lizalfos. Its powerful stench makes it unappetizing and unfit for cooking, but it's highly valued as an ingredient for elixirs."
+        "description": "The severed tail of an Electric Lizalfos. Its powerful stench makes it unappetizing and unfit for cooking, but it's highly valued as an ingredient for elixirs.",
+        "category": "monster-parts"
     },
     {
         "id": 101,
         "name": "lynel horn",
-        "description": "The Lynel this horn once grew upon surely misses it. It's exceptionally hard — so hard that most blades cannot scratch it. Throw it into a stew with critters to make elixirs."
+        "description": "The Lynel this horn once grew upon surely misses it. It's exceptionally hard — so hard that most blades cannot scratch it. Throw it into a stew with critters to make elixirs.",
+        "category": "monster-parts"
     },
     {
         "id": 102,
         "name": "lynel hoof",
-        "description": "This rare ingredient can be obtained only from a Lynel's foot. It's larger and heavier than a horse's hoof. It's useful for making elixirs but may have uses beyond that."
+        "description": "This rare ingredient can be obtained only from a Lynel's foot. It's larger and heavier than a horse's hoof. It's useful for making elixirs but may have uses beyond that.",
+        "category": "monster-parts"
     },
     {
         "id": 103,
         "name": "lynel guts",
-        "description": "This highly sought-after ingredient can only be obtained from a Lynel. It pulses with the vitality of a Lynel, a strength that makes it invaluable as an ingredient for elixirs."
+        "description": "This highly sought-after ingredient can only be obtained from a Lynel. It pulses with the vitality of a Lynel, a strength that makes it invaluable as an ingredient for elixirs.",
+        "category": "monster-parts"
     },
     {
         "id": 104,
         "name": "chuchu jelly",
-        "description": "A gelatinous substance that came from a Chuchu. It's unusable in this state, but applying a bit of elemental stimulation will change its form."
+        "description": "A gelatinous substance that came from a Chuchu. It's unusable in this state, but applying a bit of elemental stimulation will change its form.",
+        "category": "monster-parts"
     },
     {
         "id": 105,
         "name": "red chuchu jelly",
-        "description": "A jiggly substance that normally comes from a Fire Chuchu. It consistently gives off heat. If struck, it will explode in a ball of flame."
+        "description": "A jiggly substance that normally comes from a Fire Chuchu. It consistently gives off heat. If struck, it will explode in a ball of flame.",
+        "category": "monster-parts"
     },
     {
         "id": 106,
         "name": "white chuchu jelly",
-        "description": "A jiggly substance that came from an Ice Chuchu. It's cool to the touch, and squeezing it seems to relieve stress. If struck, it will explode in a cold mist."
+        "description": "A jiggly substance that came from an Ice Chuchu. It's cool to the touch, and squeezing it seems to relieve stress. If struck, it will explode in a cold mist.",
+        "category": "monster-parts"
     },
     {
         "id": 107,
         "name": "yellow chuchu jelly",
-        "description": "A jiggly substance that came from an Electric Chuchu. Electricity pulses through its gelatinous mass. If struck, it will explode in a burst of electric current."
+        "description": "A jiggly substance that came from an Electric Chuchu. Electricity pulses through its gelatinous mass. If struck, it will explode in a burst of electric current.",
+        "category": "monster-parts"
     },
     {
         "id": 108,
         "name": "keese wing",
-        "description": "The wing of a Keese. It's covered with very short, sharp fur. It's not much use by itself, but you can mix it with critters to make something useful."
+        "description": "The wing of a Keese. It's covered with very short, sharp fur. It's not much use by itself, but you can mix it with critters to make something useful.",
+        "category": "monster-parts"
     },
     {
         "id": 109,
         "name": "fire keese wing",
-        "description": "A rare Fire Keese wing. There isn't enough Fire Keese attached to it to burn you, but it does have a slight warmth to it. It can be used as an ingredient for elixirs."
+        "description": "A rare Fire Keese wing. There isn't enough Fire Keese attached to it to burn you, but it does have a slight warmth to it. It can be used as an ingredient for elixirs.",
+        "category": "monster-parts"
     },
     {
         "id": 110,
         "name": "ice keese wing",
-        "description": "A rare Ice Keese wing. Its frozen surface gleams attractively, but its usefulness isn't readily apparent."
+        "description": "A rare Ice Keese wing. Its frozen surface gleams attractively, but its usefulness isn't readily apparent.",
+        "category": "monster-parts"
     },
     {
         "id": 111,
         "name": "electric keese wing",
-        "description": "A rare Electric Keese wing. The part of the Electric Keese that produces electricity is not in its wings, so it won't shock you. Toss it in with some critters to make elixirs."
+        "description": "A rare Electric Keese wing. The part of the Electric Keese that produces electricity is not in its wings, so it won't shock you. Toss it in with some critters to make elixirs.",
+        "category": "monster-parts"
     },
     {
         "id": 112,
         "name": "keese eyeball",
-        "description": "A rare material dropped by a defeated Keese. It's fun to look at, but it doesn't seem to have much use at first glance. But it must be good for something..."
+        "description": "A rare material dropped by a defeated Keese. It's fun to look at, but it doesn't seem to have much use at first glance. But it must be good for something...",
+        "category": "monster-parts"
     },
     {
         "id": 113,
         "name": "octorok tentacle",
-        "description": "This can only be obtained from an Octorok-type enemy. It's too acidic for cooking, but it's highly valued as an ingredient for elixirs."
+        "description": "This can only be obtained from an Octorok-type enemy. It's too acidic for cooking, but it's highly valued as an ingredient for elixirs.",
+        "category": "monster-parts"
     },
     {
         "id": 114,
         "name": "octorok eyeball",
-        "description": "This can only be obtained from an Octorok-type enemy. You can sell it to a store, or you can make elixirs with it, but it may have other uses, as well."
+        "description": "This can only be obtained from an Octorok-type enemy. You can sell it to a store, or you can make elixirs with it, but it may have other uses, as well.",
+        "category": "monster-parts"
     },
     {
         "id": 115,
         "name": "octo balloon",
-        "description": "This inflatable Octorok organ has a lot of lift, so attach it to items you want to see float. Hold it in your hands, and then place it on an object to attach it."
+        "description": "This inflatable Octorok organ has a lot of lift, so attach it to items you want to see float. Hold it in your hands, and then place it on an object to attach it.",
+        "category": "monster-parts"
     },
     {
         "id": 116,
         "name": "molduga fin",
-        "description": "A sturdy fin obtained from a Molduga. It can be used to make elixirs, but there may be someone willing to trade for it."
+        "description": "A sturdy fin obtained from a Molduga. It can be used to make elixirs, but there may be someone willing to trade for it.",
+        "category": "monster-parts"
     },
     {
         "id": 117,
         "name": "molduga guts",
-        "description": "A giant organ obtained from a Molduga. This invaluable ingredient is hard to come by, and its use is shrouded in mystery."
+        "description": "A giant organ obtained from a Molduga. This invaluable ingredient is hard to come by, and its use is shrouded in mystery.",
+        "category": "monster-parts"
     },
     {
         "id": 118,
         "name": "hinox toenail",
-        "description": "A nail obtained from a Hinox. It's as thick as a plate of armor and can be stewed with critters to make elixirs."
+        "description": "A nail obtained from a Hinox. It's as thick as a plate of armor and can be stewed with critters to make elixirs.",
+        "category": "monster-parts"
     },
     {
         "id": 119,
         "name": "hinox tooth",
-        "description": "A tooth obtained from a Hinox. It's so large, it's hard to believe it's a real tooth. It can be used to make elixirs."
+        "description": "A tooth obtained from a Hinox. It's so large, it's hard to believe it's a real tooth. It can be used to make elixirs.",
+        "category": "monster-parts"
     },
     {
         "id": 120,
         "name": "hinox guts",
-        "description": "A tooth obtained from a Hinox. It's so large, it's hard to believe it's a real tooth. It can be used to make elixirs."
+        "description": "A tooth obtained from a Hinox. It's so large, it's hard to believe it's a real tooth. It can be used to make elixirs.",
+        "category": "monster-parts"
     },
     {
         "id": 121,
         "name": "ancient screw",
-        "description": "A screw used in ancient machinery. It's made of an unknown material, and no matter how many times it's turned, its threads never seem to show signs of wear."
+        "description": "A screw used in ancient machinery. It's made of an unknown material, and no matter how many times it's turned, its threads never seem to show signs of wear.",
+        "category": "monster-parts"
     },
     {
         "id": 122,
         "name": "ancient spring",
-        "description": "A spring used in ancient machinery. It is light and buoyant enough to float on water, and no matter how many times it's compressed, it never loses tension."
+        "description": "A spring used in ancient machinery. It is light and buoyant enough to float on water, and no matter how many times it's compressed, it never loses tension.",
+        "category": "monster-parts"
     },
     {
         "id": 123,
         "name": "ancient gear",
-        "description": "A gear used in ancient machinery. Despite being incredibly old, its build quality is leaps and bounds above anything built using current technology."
+        "description": "A gear used in ancient machinery. Despite being incredibly old, its build quality is leaps and bounds above anything built using current technology.",
+        "category": "monster-parts"
     },
     {
         "id": 124,
         "name": "ancient shaft",
-        "description": "A machine part used in ancient machinery. It's incredibly sturdy, and it's not made of any recognizable material. It may come in handy someday."
+        "description": "A machine part used in ancient machinery. It's incredibly sturdy, and it's not made of any recognizable material. It may come in handy someday.",
+        "category": "monster-parts"
     },
     {
         "id": 125,
         "name": "ancient core",
-        "description": "This crystal was made using lost technology. At one time it was the power source for ancient machines. This item is very valuable to researchers."
+        "description": "This crystal was made using lost technology. At one time it was the power source for ancient machines. This item is very valuable to researchers.",
+        "category": "monster-parts"
     },
     {
         "id": 126,
         "name": "giant ancient core",
-        "description": "A giant energy crystal made using lost ancient technology. Cores this large are an extremely rare find. A researcher would probably know how to use this."
+        "description": "A giant energy crystal made using lost ancient technology. Cores this large are an extremely rare find. A researcher would probably know how to use this.",
+        "category": "monster-parts"
     },
     {
         "id": 127,
         "name": "dinraal's scale",
-        "description": "This precious scale fell from the red spirit Dinraal. It emanates a great heat. You can use it in cooking, but just eating it seems like a waste."
+        "description": "This precious scale fell from the red spirit Dinraal. It emanates a great heat. You can use it in cooking, but just eating it seems like a waste.",
+        "category": "monster-parts"
     },
     {
         "id": 128,
         "name": "naydra's scale",
-        "description": "This precious scale fell from the blue spirit Naydra. It contains a bitter cold within. You can use it in cooking, but just eating it seems like a waste."
+        "description": "This precious scale fell from the blue spirit Naydra. It contains a bitter cold within. You can use it in cooking, but just eating it seems like a waste.",
+        "category": "monster-parts"
     },
     {
         "id": 129,
         "name": "farosh's scale",
-        "description": "This precious scale fell from the golden spirit Farosh. It contains powerful electricity within. You can cook with it, but just eating it seems like a waste."
+        "description": "This precious scale fell from the golden spirit Farosh. It contains powerful electricity within. You can cook with it, but just eating it seems like a waste.",
+        "category": "monster-parts"
     },
     {
         "id": 130,
         "name": "dinraal's claw",
-        "description": "This valuable claw was plucked from the red spirit Dinraal. It was extremely hot before it was removed. You could sell it to a store, but it must have some other use."
+        "description": "This valuable claw was plucked from the red spirit Dinraal. It was extremely hot before it was removed. You could sell it to a store, but it must have some other use.",
+        "category": "monster-parts"
     },
     {
         "id": 131,
         "name": "naydra's claw",
-        "description": "This valuable claw was plucked from the blue spirit Naydra. It was freezing cold before it was removed. You could sell it, but there must be some other use for it."
+        "description": "This valuable claw was plucked from the blue spirit Naydra. It was freezing cold before it was removed. You could sell it, but there must be some other use for it.",
+        "category": "monster-parts"
     },
     {
         "id": 132,
         "name": "farosh's claw",
-        "description": "This claw was plucked from the golden spirit Farosh. Its electricity was expelled before it was removed, so it's safe to handle. A store will buy it, but it must have some other use."
+        "description": "This claw was plucked from the golden spirit Farosh. Its electricity was expelled before it was removed, so it's safe to handle. A store will buy it, but it must have some other use.",
+        "category": "monster-parts"
     },
     {
         "id": 133,
         "name": "shard of dinraal's fang",
-        "description": "This shard fell from the red spirit Dinraal's fang. It's exceptionally hard and therefore impossible to process, but apparently it can be used as a material for something."
+        "description": "This shard fell from the red spirit Dinraal's fang. It's exceptionally hard and therefore impossible to process, but apparently it can be used as a material for something.",
+        "category": "monster-parts"
     },
     {
         "id": 134,
         "name": "shard of naydra's fang",
-        "description": "This shard fell from the blue spirit Naydra's fang. It's much harder than any metal, so it's impossible to process. Yet rumors say it can be used as a material for something."
+        "description": "This shard fell from the blue spirit Naydra's fang. It's much harder than any metal, so it's impossible to process. Yet rumors say it can be used as a material for something.",
+        "category": "monster-parts"
     },
     {
         "id": 135,
         "name": "shard of farosh's fang",
-        "description": "This shard fell from the blue spirit Naydra's fang. It's much harder than any metal, so it's impossible to process. Yet rumors say it can be used as a material for something."
+        "description": "This shard fell from the blue spirit Naydra's fang. It's much harder than any metal, so it's impossible to process. Yet rumors say it can be used as a material for something.",
+        "category": "monster-parts"
     },
     {
         "id": 136,
         "name": "shard of dinraal's horn",
-        "description": "This shard chipped and fell off the red spirit Dinraal. Its horn is said to be the crystallized power of fire itself. It sells for a high price, but rumors say there's some other use for it."
+        "description": "This shard chipped and fell off the red spirit Dinraal. Its horn is said to be the crystallized power of fire itself. It sells for a high price, but rumors say there's some other use for it.",
+        "category": "monster-parts"
     },
     {
         "id": 137,
         "name": "shard of naydra's horn",
-        "description": "This shard chipped and fell off the blue spirit Naydra. It's said the horn is the crystallized power of ice itself. It sells for quite a bit, but rumors say it has some other use."
+        "description": "This shard chipped and fell off the blue spirit Naydra. It's said the horn is the crystallized power of ice itself. It sells for quite a bit, but rumors say it has some other use.",
+        "category": "monster-parts"
     },
     {
         "id": 138,
         "name": "shard of farosh's horn",
-        "description": "This shard fell off the golden spirit Farosh. It's said the horn is the crystallized power of electricity itself. It sells for a lot, but there must be some other use for it."
+        "description": "This shard fell off the golden spirit Farosh. It's said the horn is the crystallized power of electricity itself. It sells for a lot, but there must be some other use for it.",
+        "category": "monster-parts"
     },
     {
         "id": 139,
         "name": "wood",
-        "description": "A portable bundle of wood. You can use this to make a campfire if you have something to light it."
+        "description": "A portable bundle of wood. You can use this to make a campfire if you have something to light it.",
+        "category": "miscellaneous"
     },
     {
         "id": 140,
         "name": "flint",
-        "description": "Strike it with a metallic weapon to generate a spark. This portable fire starter breaks after one use, but it can create a long-lasting flame if you use it near firewood."
+        "description": "Strike it with a metallic weapon to generate a spark. This portable fire starter breaks after one use, but it can create a long-lasting flame if you use it near firewood.",
+        "category": "miscellaneous"
     },
     {
         "id": 141,
         "name": "rock salt",
-        "description": "Crystallized salt from the ancient sea commonly used to season meals. Cannot be eaten in this form."
+        "description": "Crystallized salt from the ancient sea commonly used to season meals. Cannot be eaten in this form.",
+        "category": "miscellaneous"
     },
     {
         "id": 142,
         "name": "luminous stone",
-        "description": "This mysterious mineral gives off a pale blue glow in the dark, which some believe to be souls of the dead. Apparently, this stone can be used as a base to make special clothing."
+        "description": "This mysterious mineral gives off a pale blue glow in the dark, which some believe to be souls of the dead. Apparently, this stone can be used as a base to make special clothing.",
+        "category": "miscellaneous"
     },
     {
         "id": 143,
         "name": "amber",
-        "description": "A fossilized resin with a caramelesque sheen to it. It's been valued as a component in decorations and crafting since ancient times."
+        "description": "A fossilized resin with a caramelesque sheen to it. It's been valued as a component in decorations and crafting since ancient times.",
+        "category": "miscellaneous"
     },
     {
         "id": 144,
         "name": "opal",
-        "description": "A valuable ore that gives off a mesmerizing iridescence similar to the inside of a seashell. It contains the power of water."
+        "description": "A valuable ore that gives off a mesmerizing iridescence similar to the inside of a seashell. It contains the power of water.",
+        "category": "miscellaneous"
     },
     {
         "id": 145,
         "name": "topaz",
-        "description": "This precious yellow gem contains the power of electricity. It's been known to fetch a high price since ancient times."
+        "description": "This precious yellow gem contains the power of electricity. It's been known to fetch a high price since ancient times.",
+        "category": "miscellaneous"
     },
     {
         "id": 146,
         "name": "ruby",
-        "description": "A precious red gem mined from large ore deposits found throughout Hyrule. Rubies contain the power of fire and have fetched a high price since ancient times."
+        "description": "A precious red gem mined from large ore deposits found throughout Hyrule. Rubies contain the power of fire and have fetched a high price since ancient times.",
+        "category": "miscellaneous"
     },
     {
         "id": 147,
         "name": "sapphire",
-        "description": "A precious blue gem mined from natural rock formations. Sapphires contain the very essence of ice. They've been known to fetch a high price since ancient times."
+        "description": "A precious blue gem mined from natural rock formations. Sapphires contain the very essence of ice. They've been known to fetch a high price since ancient times.",
+        "category": "miscellaneous"
     },
     {
         "id": 148,
         "name": "diamond",
-        "description": "The most precious gem one can find in Hyrule, its signature sparkle has charmed Hyruleans for generations. As such, it has sold for a very high price since ancient times."
+        "description": "The most precious gem one can find in Hyrule, its signature sparkle has charmed Hyruleans for generations. As such, it has sold for a very high price since ancient times.",
+        "category": "miscellaneous"
     },
     {
         "id": 149,
         "name": "star fragment",
-        "description": "A mysterious stone fragment that fell from the sky. It looks like it would fetch a good price, but you may able to use it in certain recipes as well."
+        "description": "A mysterious stone fragment that fell from the sky. It looks like it would fetch a good price, but you may able to use it in certain recipes as well.",
+        "category": "miscellaneous"
     },
 ];
 
