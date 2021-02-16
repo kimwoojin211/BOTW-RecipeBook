@@ -3,10 +3,42 @@
 
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="src/assets/fonts/botw-font/stylesheet.css" rel="stylesheet" type="text/css">
   <title></title>
 </head>
 
 <body>
-</body>
 
-</html>
+  <div class="container">
+    <h1>Breath of the Wild Recipe Maker</h1>
+    <div>
+      <form id="inputForm">
+        <div class="form-group">
+          <label for="ingredient1">An Ingredient</label>
+          <input type="text" name="ingredient1" id="firstIngredient">
+        </div>
+        <div class="form-group">
+          <label for="ingredient2">An Ingredient</label>
+          <input type="text" name="ingredient2" id="secondIngredient">
+        </div>
+        <div class="form-group">
+          <label for="ingredient3">An Ingredient</label>
+          <input type="text" name="ingredient3" id="thirdIngredient">
+        </div>
+        <div class="form-group">
+          <label for="ingredient4">An Ingredient</label>
+          <input type="text" name="ingredient4" id="fourthIngredient">
+        </div>
+        <div class="form-group">
+          <label for="ingredient5">An Ingredient</label>
+          <input type="text" name="ingredient5" id="fifthIngredient">
+        </div>
+        <button class="btn btn-dark">Dish me up</button>
+      </form>
+    </div>
+
+    <div id="output"></div>
+
+
+  </div>
+</body>

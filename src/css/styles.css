@@ -1,3 +1,7 @@
 body {
-  background-color: silver;
+  margin-top: 30px;
+  background-image: url("../assets/images/botw.jpg");
+  background-size: cover;
+  Background-repeat: no-repeat;
+  object-fit: cover;
 }
