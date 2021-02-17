@@ -1,23 +1,23 @@
 body {
-  background-color: silver;
+  background-color:silver;
 }
 
 .container {
   display:flex;
 }
 
-/* .ingredient {
-  border: 4px solid green;
-  background-color: rgba(128, 64, 0, 0.716);
+.ingredient {
+  border: 4px solid rgb(134,165,169);
+  background-color: rgb(86, 114, 117, 0.5);
   border-radius: 4px;
   height: 11vw;
   display: flex;
 
-} */
+} 
 
-/* .ingredient__item {
+.ingredient__item {
   border: 4px solid rgb(147, 147, 149, 0.6);
-  background-color: rgba(14, 85, 7, 0.767);
+  background-color: rgba(146,197,130, 0.767);
   border-radius: 4px;
   display: block;
   height: 9.6vw;
@@ -29,7 +29,7 @@ body {
 }
 
 .ingredient__item_image {
-  background-color: white;
+  background-color: rgb(252,255,224);
   border-radius: 10vw;
   height: 4vw;
   width: 5vw;
@@ -52,17 +52,121 @@ body {
   }
 
   .ingredient__item_name--white {
-    color: white;
+  color: rgb(118,118,118);
+  text-shadow: 0.5px 0.5px #000000;
   }
 
+  .ingredient__item_name--gray {
+  color: 118,118,118;
+  }
 
-/* triforce https://codepen.io/GemmaStiles/pen/pGOEYR 
+  .grow { 
+  transition: all .2s ease-in-out; 
+  }
+    
+  .grow:hover { 
+  transform: scale(1.1); 
+  }
+
+  .grow--big { 
+  transition: all .2s ease-in-out; 
+}
+  .ingredient__item_name--hidden {
+  display: none;
+  }
+
+  .grow--big:hover .ingredient__item_name--hidden { 
+    transform: scale(2.1); 
+    display: block;
+  }
+
+  .shrink { 
+    transition-duration: 1000ms;
+    animation: shrink 1s infinite;
+    }
+
+    @keyframes shrink {
+      from {
+        transform: scale(1);
+        top: 0px;
+        left: 0px;
+      }
+      to {
+        transform: scale(0.22);
+        top: 500px;
+        left: 1200px;
+      }
+    }
+    .shrink--disappear { 
+      transition-duration: 1000ms;
+      animation: shrink 1s infinite;
+      }
+  
+      @keyframes shrink--disappear {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(0.00);
+        }
+      }
+    @keyframes lower {
+      from {
+        transform: translatey(0px);
+      }
+      to {
+        transform: translatey(-300px);
+      }
+    }
+  #output2 {
+    border: 4px solid blue;
+    position: absolute;
+    right: 5vw;
+    top: 25vw;
+    width: 30vw;
+    height: 20vw;
+  }
+
+  #output2__cards {
+    border: 4px solid red;
+    position: absolute;
+    right: 5vw;
+    top: 17vw;
+    width: 30vw;
+    height: 5vw;
+    transform: scale3d(0.52, 0.52, 0.52);
+  } 
+  #output2__header {
+    position: absolute;
+    right: 12.5vw;
+    top: 13vw;
+    font-size: 30px;
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+    color: rgb(181, 127, 44)
+
+  } 
+  #output2__reset {
+    position:absolute;
+    top: 11vw;
+    right: -2vw;
+    transform: scale3d(0.22, 0.22, 0.22);
+  }
+
+  #output2__cards img {
+    -webkit-animation: flip--y 3s ease-out forwards;
+    -moz-animation: flip--y 3s ease-out forwards;
+    -o-animation: flip--y 3s ease-out forwards;
+    animation: flip--y 3s ease-out forwards;
+  }
+    
+/* https://codepen.io/GemmaStiles/pen/pGOEYR */
 .triforce {
   margin:auto;
-}
+  }
 
 .triangle {
-  border-bottom:104px solid rgb(255,188,0, 0.2);
+  border-bottom:104px solid rgb(255,188,0, 0.3);
   border-left:60px solid transparent;
   border-right:60px solid transparent;
   content:'';
@@ -75,7 +179,7 @@ body {
 }
 
 .triangle:before {
-  border-bottom:104px solid rgb(255,188,0, 0.2);
+  border-bottom:104px solid rgb(255,188,0, 0.3);
   border-left:60px solid transparent;
   border-right:60px solid transparent;
   content:'';
@@ -86,11 +190,24 @@ body {
 }
 
 .triangle:after {
-border-bottom:104px solid rgb(255,188,0, 0.2);
+border-bottom:104px solid rgb(255,188,0, 0.3);
 border-left:60px solid transparent;
 border-right:60px solid transparent;
 content:'';
 display:block;
 position:absolute;
 top:104px;
-} */
+}
+
+
+.flip--y {
+  -webkit-animation: flip--y 3s ease-out forwards;
+  -moz-animation: flip--y 3s ease-out forwards;
+  -o-animation: flip--y 3s ease-out forwards;
+  animation: flip--y 3s ease-out forwards;
+}
+
+@keyframes flip--y {
+  from { -webkit-transform: rotateY(0); -moz-transform: rotateY(0); transform: rotateY(0); }
+  to { -webkit-transform: rotateY(1800deg); -moz-transform: rotateY(1800deg); transform: rotateY(1800deg); }
+}

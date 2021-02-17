@@ -155,80 +155,127 @@ import './assets/images/149.png';
 
 $(document).ready(function () {
   console.log(document.getElementById("output").innerHTML)
-  for (let i = 0; i <= 10; i++) {
+  var html = ""
+  for (let i = 0; i <= 30; i++) {
     if (i === 0) {
-    document.getElementById("output").innerHTML += `<div class="row ingredient">`;
+      html += `<div class="row ingredient">`;
     }
-    if (i % 5 === 0) {
+    if (i === 5 || i === 10 || i === 15 || i === 20 || i === 25 || i === 30) {
+      html += `</div>`;
+      console.log("5 recipes in first row");
+      document.getElementById("output").innerHTML += html
       console.log("divisible by 5");
-      document.getElementById("output").innerHTML += `<div class="row ingredient">`;
+      html = ""
+      html += `<div class="row ingredient">`;
     }
-    document.getElementById("output").innerHTML +=
+    html +=
       `
-      <div id="ingredient${i}" class="ingredient__item col-md-2">
+      <div id="ingredient${i}" class="ingredient__item grow col-md-2">
         <div class="ingredient__item_image"><img src="./assets/images/${i + 1}.png">
         </div>
         <div class="ingredient__item_name ingredient__item_name--white text-center">
-        <p>${(data[i].name).charAt(0).toUpperCase() + (data[i].name).slice(1, data[i].name.length)}</p>
+          <p>${(data[i].name).charAt(0).toUpperCase() + (data[i].name).slice(1, data[i].name.length)}</p>
         </div>
       <div class="triforce">
         <div class="triangle">
-      </div>
+        </div>
       </div>
       </div>
       `
-      // document.getElementById(`ingredient${i}`).setAttribute('style', 'display: block;');
-
-      // document.getElementById(`ingredient${i}`).setAttribute('style', 'width: 12vw;');
-
-
-    if (i % 5 === 0) {
-      document.getElementById("output").innerHTML += `</div>`;
-      console.log("divisible by 5");
-    }
-    if (i === 149) {
+    if (i === 30) {
+      html += `</div>`;
+      document.getElementById("output").innerHTML += html
       initializeArray();
     }
 
 
   }
-
   function initializeArray() {
+   
     //declare empty array
     let ingredientArray = [];
-    //loop over ingredient names to add eventlistener (currently 5)
-    for (let i = 1; i <= 5; i++) {
+    let numInArray = 0;
+    document.getElementById("output2__header").classList.add("ingredient__item_name--hidden")
+
+    //reset button
+    document.getElementById(`output2__reset`).addEventListener("click", function () {
+      ingredientArray = [];
+      document.getElementById("output2__cards").innerHTML = "";
+      document.getElementById("output2__header").classList.add("ingredient__item_name--hidden")
+      numInArray = 0;
+    });
+
+    //loop over ingredient names to add eventlistener
+    for (let i = 0; i <= 149; i++) {
+
       document.getElementById(`ingredient${i}`).addEventListener("click", function () {
-        let searchName = new RegExp(`${document.getElementById(this.id).textContent}`);
-        const found = ingredientArray.find(value => searchName.test(value));
-        if (found === undefined) {
-          ingredientArray.push(document.getElementById(this.id).textContent);
-          document.getElementById("output").textContent = ingredientArray;
-          return;
+        //mqy need to move this check
+        console.log(ingredientArray)
+        if (numInArray === 4) {
+          document.getElementById("output2__header").classList.remove("ingredient__item_name--hidden");
+          console.log("hello")
         }
-        //check if current ingredient has an x2-x4 and slice/add modifier to string
-        for (let i = 0; i <= ingredientArray.length; i++) {
-          if (ingredientArray[i] === (document.getElementById(this.id).textContent + "x4")) {
-            ingredientArray[i] = ingredientArray[i].slice(0, (ingredientArray[i].length - 2)) + "x5";
+         if (numInArray < 5) {
+
+          setTimeout(() => {
+          //    document.getElementById(this.id).classList.add("shrink");
+            document.getElementById(this.id).classList.add("flip--y")
+          }, 0);
+
+          setTimeout(() => {
+            document.getElementById("output2__cards").innerHTML +=
+            `<div class="grow col-md-2">
+              <div class="grow--big"><img src="./assets/images/${i + 1}.png">
+                <div class="ingredient__item_name ingredient__item_name--grey text-center">
+                  <div class="ingredient__item_name--hidden"> <p>${(data[i].name).charAt(0).toUpperCase() + (data[i].name).slice(1, data[i].name.length)}</p></div> 
+                  </div>
+                </div>
+              </div>
+            </div>`
+          }, 500);
+          setTimeout(() => {
+            document.getElementById(this.id).classList.remove("flip--y");
+          }, 3000);
+
+          console.log(document.getElementById(this.id).textContent.trim())
+          numInArray++;
+          console.log(numInArray)
+          let searchName = new RegExp(`${document.getElementById(this.id).textContent.trim()}`);
+          const found = ingredientArray.find(value => searchName.test(value));
+          console.log(numInArray);
+          //Check if item is in array otherwise add the first entry
+          if (found === undefined) {
+            ingredientArray.push((document.getElementById(this.id).textContent).trim());
+            return;
           }
-          else if (ingredientArray[i] === (document.getElementById(this.id).textContent + "x3")) {
-            ingredientArray[i] = ingredientArray[i].slice(0, (ingredientArray[i].length - 2)) + "x4";
+          console.log(ingredientArray)
+          //check if current ingredient has an x2-x4 and slice/add modifier to string
+          for (let i = 0; i <= ingredientArray.length; i++) {
+            if (ingredientArray[i] === (document.getElementById(this.id).textContent.trim() + "x4")) {
+              ingredientArray[i] = ingredientArray[i].slice(0, (ingredientArray[i].trim().length - 2)) + "x5";
+            }
+            else if (ingredientArray[i] === (document.getElementById(this.id).textContent.trim() + "x3")) {
+              ingredientArray[i] = ingredientArray[i].slice(0, (ingredientArray[i].trim().length - 2)) + "x4";
+            }
+            else if (ingredientArray[i] === (document.getElementById(this.id).textContent.trim() + "x2")) {
+              ingredientArray[i] = ingredientArray[i].slice(0, (ingredientArray[i].trim().length - 2)) + "x3";
+            }
+            else if (ingredientArray[i] === document.getElementById(this.id).textContent.trim()) {
+              ingredientArray[i] += "x2";
+            }
+            else {
+              console.log("not a match");
+            }
           }
-          else if (ingredientArray[i] === (document.getElementById(this.id).textContent + "x2")) {
-            ingredientArray[i] = ingredientArray[i].slice(0, (ingredientArray[i].length - 2)) + "x3";
-          }
-          else if (ingredientArray[i] === document.getElementById(this.id).textContent) {
-            ingredientArray[i] += "x2";
-          }
-          else {
-            console.log("not a match");
-          }
+          
         }
-        //Output for testing
-        document.getElementById("output").textContent = ingredientArray;
+
       });
+      
     }
+    
   }
+  
 });
 
 

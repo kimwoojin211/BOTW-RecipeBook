@@ -528,7 +528,8 @@ export const data = [
     {
         "id": 53,
         "name": "hyrule bass",
-        "description": "An ordinary fish that can be found all over Hyrule. It can be eaten raw, but cooking it amplifies its healing benefits."
+        "description": "An ordinary fish that can be found all over Hyrule. It can be eaten raw, but cooking it amplifies its healing benefits.",
+        "category": "creatures"
     },
     {
         "id": 54,
