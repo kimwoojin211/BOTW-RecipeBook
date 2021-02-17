@@ -86,7 +86,7 @@ $(document).ready(function () {
             let ingredientsList = [element.ingredient1, element.ingredient2, element.ingredient3, element.ingredient4, element.ingredient5];
             ingredientsList.sort();
             if (ingredients[0] === ingredientsList[0] && ingredients[1] === ingredientsList[1] && ingredients[2] === ingredientsList[2] && ingredients[3] === ingredientsList[3] && ingredients[4] === ingredientsList[4]) {
-              // recipematch = element;
+              recipematch = element;
               return;
             }
           }
@@ -98,7 +98,7 @@ $(document).ready(function () {
           let recipeName = recipematch.name.replaceAll(" ","-");
           recipeName = recipeName.replaceAll("~","");
           let urlName = recipeName;
-          const bannedwords = ["Chilly", "Enduring", "Hasty", "Enduring", "Energizing", "Hearty", "Mighty", "Spicy", "Tough", "Electro", "Sneaky"];
+          const bannedwords = ["Chilly", "Enduring", "Hasty", "Energizing", "Hearty", "Mighty", "Spicy", "Tough", "Electro", "Sneaky"];
           console.log(recipeName);
           bannedwords.forEach(element2 =>{
             if(urlName.slice(0,element2.length)===element2 && !urlName.includes("Elixir"))
