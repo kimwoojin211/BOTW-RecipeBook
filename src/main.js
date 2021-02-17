@@ -4,17 +4,37 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import { data } from './ingredients.js';
 import './imports.js';
-
 $(document).ready(function () {
-  let html = "";
-  for (let i = 0; i <= 30; i++) {
+
+
+  console.log(document.getElementById("output__natural-materials").innerHTML)
+  let html = ""
+  for (let i = 0; i < 149; i++) {
     if (i === 0) {
       html += `<div class="row ingredient">`;
     }
-    if (i === 5 || i === 10 || i === 15 || i === 20 || i === 25 || i === 30) {
+    else if (i === 5 || i === 10 || i === 15 || i === 20 || i === 25 || i === 30 || i === 35 || i === 40 || i === 45 || i === 50 || i === 52) {
       html += `</div>`;
-      document.getElementById("output").innerHTML += html;
-      html = "";
+      document.getElementById("output__natural-materials").innerHTML += html
+      html = ""
+      html += `<div class="row ingredient">`;
+    }
+    else if (i === 57 || i === 62 || i === 67 || i === 72 || i === 77 || i === 82 || i === 87 || i === 88) {
+      html += `</div>`;
+      document.getElementById("output__creatures").innerHTML += html
+      html = ""
+      html += `<div class="row ingredient">`;
+    }
+    else if (i === 93 || i === 98 || i === 103 || i === 108 || i === 113 || i === 118 || i === 123 || i === 128 || i === 133 || i === 138 || i === 138) {
+      html += `</div>`;
+      document.getElementById("output__monster-parts").innerHTML += html
+      html = ""
+      html += `<div class="row ingredient">`;
+    }
+    else if (i === 143 || i === 148) {
+      html += `</div>`;
+      document.getElementById("output__miscellaneous").innerHTML += html
+      html = ""
       html += `<div class="row ingredient">`;
     }
     html +=
@@ -30,31 +50,34 @@ $(document).ready(function () {
         </div>
       </div>
       </div>
-      `;
-    if (i === 30) {
-      html += `</div>`;
-      document.getElementById("output").innerHTML += html;
+      `
+
+    if (i === 148) {
+      console.log("148th ingredient")
+      document.getElementById("output__miscellaneous").innerHTML += html
       initializeArray();
     }
-      
-      
+
   }
+  // initializeArray();
+
   function initializeArray() {
-    
     //declare empty array
     let ingredientArray = [];
     let numInArray = 0;
     document.getElementById("output2__header").classList.add("ingredient__item_name--hidden");
-      
+
     //reset button
     document.getElementById(`output2__reset`).addEventListener("click", function () {
-      
+
       ingredientArray = [];
+      console.log("clicked reset")
       document.getElementById("output2__cards").innerHTML = "";
+      document.getElementById("output2").innerHTML = "";
       document.getElementById("output2__header").classList.add("ingredient__item_name--hidden");
       numInArray = 0;
     });
-      
+
     document.getElementById(`mix`).addEventListener("click", function () {
       let promise = new Promise(function (resolve, reject) {
         let request = new XMLHttpRequest();
@@ -79,10 +102,9 @@ $(document).ready(function () {
         ingredients = ingredients.sort();
         console.log(ingredients);
         let recipematch = null;
-        const bannedRecipes = ["Campfire Egg", "Baked Palm Fruit", "Blueshell Escargot", "Hard Boiled Egg", "Baked Apple", "Roasted Acorn", "Roasted Bass", "Roasted Bird Drumstick", "Roasted Radish",  "Seared Gourmet Steak", "Seared Prime Steak", "Seared Steak", "Toasted Hearty Truffle", "Toasty Hylian Shroom"];
+        const bannedRecipes = ["Campfire Egg", "Baked Palm Fruit", "Blueshell Escargot", "Hard Boiled Egg", "Baked Apple", "Roasted Acorn", "Roasted Bass", "Roasted Bird Drumstick", "Roasted Radish", "Seared Gourmet Steak", "Seared Prime Steak", "Seared Steak", "Toasted Hearty Truffle", "Toasty Hylian Shroom"];
         recipes.forEach(element => {
-          if(!bannedRecipes.includes(element.name))
-          {
+          if (!bannedRecipes.includes(element.name)) {
             let ingredientsList = [element.ingredient1, element.ingredient2, element.ingredient3, element.ingredient4, element.ingredient5];
             ingredientsList.sort();
             if (ingredients[0] === ingredientsList[0] && ingredients[1] === ingredientsList[1] && ingredients[2] === ingredientsList[2] && ingredients[3] === ingredientsList[3] && ingredients[4] === ingredientsList[4]) {
@@ -92,31 +114,26 @@ $(document).ready(function () {
           }
         });
 
-        if(recipematch!=null)
-        {
+        if (recipematch != null) {
           console.log("hi");
-          let recipeName = recipematch.name.replaceAll(" ","-");
-          recipeName = recipeName.replaceAll("~","");
+          let recipeName = recipematch.name.replaceAll(" ", "-");
+          recipeName = recipeName.replaceAll("~", "");
           let urlName = recipeName;
           const bannedwords = ["Chilly", "Enduring", "Hasty", "Energizing", "Hearty", "Mighty", "Spicy", "Tough", "Electro", "Sneaky"];
           console.log(recipeName);
-          bannedwords.forEach(element2 =>{
-            if(urlName.slice(0,element2.length)===element2 && !urlName.includes("Elixir"))
-            {
-              urlName= recipeName.slice(element2.length+1);
+          bannedwords.forEach(element2 => {
+            if (urlName.slice(0, element2.length) === element2 && !urlName.includes("Elixir")) {
+              urlName = recipeName.slice(element2.length + 1);
             }
           });
-          urlName = urlName.replaceAll("è","e");
-          if(urlName === "Milk")
-          {
+          urlName = urlName.replaceAll("è", "e");
+          if (urlName === "Milk") {
             urlName = "Warm-Milk";
           }
-          if(urlName === "Mushroom-risotto")
-          {
+          if (urlName === "Mushroom-risotto") {
             urlName = "Mushroom-Risotto";
           }
-          if(urlName === "Fruit-cake")
-          {
+          if (urlName === "Fruit-cake") {
             urlName === "Fruitcake"
           }
           console.log(urlName);
@@ -130,14 +147,13 @@ $(document).ready(function () {
               <p>${recipematch.name}</p>
             </div>`;
         }
-        else
-        {
+        else {
           document.getElementById("output2").innerHTML = `<p class="error">Error! Recipe not found. Please try again.</p>`;
         }
       });
     });
     //loop over ingredient names to add eventlistener
-    for (let i = 0; i <= 149; i++) {
+    for (let i = 0; i < 149; i++) {
 
       document.getElementById(`ingredient${i}`).addEventListener("click", function () {
         //mqy need to move this check
@@ -147,8 +163,8 @@ $(document).ready(function () {
         if (numInArray < 5) {
 
           setTimeout(() => {
-            //    document.getElementById(this.id).classList.add("shrink");
-            document.getElementById(this.id).classList.add("flip--y");
+            document.getElementById(this.id).classList.add("shrink");
+            // document.getElementById(this.id).classList.add("flip--y")
           }, 0);
 
           setTimeout(() => {
@@ -163,8 +179,8 @@ $(document).ready(function () {
             </div>`
           }, 500);
           setTimeout(() => {
-            document.getElementById(this.id).classList.remove("flip--y");
-          }, 3000);
+            document.getElementById(this.id).classList.remove("shrink");
+          }, 1000);
 
           numInArray++;
           let searchName = new RegExp(`${document.getElementById(this.id).textContent.trim()}`);
@@ -195,6 +211,14 @@ $(document).ready(function () {
           }
         }
       });
+
     }
+
   }
+
 });
+
+
+
+
+
