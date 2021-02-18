@@ -19,7 +19,7 @@ _Jer Miller_
 * Javascript
 
 ## Description
-_This web application uses a proprietary algorithm to allow the user to create recipes via an ingredients list found in the hit video "The Legend of Zelda: Breath of the Wild". It is built with custom HTML and CSS, the backend logic is created using JQuery with some additional vanilla Javascript.
+_This web application uses a proprietary algorithm to allow the user to create recipes via an ingredients list found in the hit video "The Legend of Zelda: Breath of the Wild". It is built with custom HTML and CSS, the backend logic is created using JQuery with some additional vanilla Javascript._
 
 
 ## Setup/Installation Requirements
