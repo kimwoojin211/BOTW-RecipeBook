@@ -26,7 +26,7 @@ $(document).ready(function () {
     </div>
     `
 
-    if (((i <= 49 && i % 5 === 4) || i === 51) || ((i >= 57 && i <= 87 && i % 5 === 1) || i === 87) || (i >= 92 && i % 5 === 2)) {
+    if (((i <= 49 && i % 5 === 4) || i === 51) || ((i >= 52 && i <= 87 && i % 5 === 1) || i === 87) || (i >= 92 && i % 5 === 2)) {
       html += `</div>`;
       if (i <= 51)
         document.getElementById("output__natural-materials").innerHTML += html;
@@ -69,9 +69,11 @@ $(document).ready(function () {
           let urlName = recipe.fixImageURL(recipematch.name);
           const imageURL = `https://www.guideofthewild.com/assets/images/cookingPot/meals/${urlName}.png`;
           document.getElementById("output2").innerHTML = `
-          <div id="recipe" class="recipe col-md-2">
+          <div id="recipe" class="recipe">
             <div class="recipe_image"><img src="${imageURL}"
             class="picture">
+            </div>
+            <div class="hearts"><img src="./assets/images/heart.png" class="picture" id="heart"> x${recipematch.hearts}
             </div>
             <div class="recipe_name">
               <p>${recipematch.name}</p>
@@ -80,10 +82,7 @@ $(document).ready(function () {
         else {
           document.getElementById("output2").innerHTML = `<p class="error">Error! Recipe not found. Please try again.</p>`;
         }
-      },
-        function (error) {
-
-        });
+      });
     });
     //loop over ingredient names to add eventlistener
     for (let i = 0; i < 149; i++) {

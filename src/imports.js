@@ -147,3 +147,4 @@ import './assets/images/146.png';
 import './assets/images/147.png';
 import './assets/images/148.png';
 import './assets/images/149.png';
+import './assets/images/heart.png';

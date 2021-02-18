@@ -35,6 +35,7 @@ body {
 }
 
 .ingredient__item {
+  cursor: pointer;
   border: 4px solid rgb(147, 147, 149, 0.6);
   background-color: rgba(146,197,130, 0.767);
   border-radius: 4px;
@@ -71,12 +72,12 @@ body {
   }
 
   .ingredient__item_name--white {
-  color: rgb(118,118,118);
+  color: rgb(238, 238, 238);
   text-shadow: 0.5px 0.5px #000000;
   }
 
   .ingredient__item_name--gray {
-  color: 118,118,118;
+    color: rgb(233, 233, 233);
   }
 
   .grow {
@@ -140,17 +141,56 @@ body {
       }
     }
   #output2 {
-    border: 2px solid rgb(255, 89, 0);
+    background-color: rgba(255, 255, 255, 0.567);
+    border: 7px solid rgb(255, 89, 0, 0.4);
+    border-radius: 20px;
     position: absolute;
+    padding-top: 35px;
     right: 11vw;
-    left: 59vw;
+    left: 59.25vw;
     top: 25vw;
-    width: 18vw;
+    width: 17vw;
     height: 15vw;
   }
 
+  .recipe_image{
+    justify-content: center;
+    align-items: center;
+  }
+  .recipe_image img{
+    margin: auto;
+    object-fit: contain;
+    display: flex;
+    transform: scale3d(1.3, 1.3, 1.3);
+  }
+
+  .hearts{
+    margin: auto;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+    display: flex;
+    font-family: 'EB Garamond', serif;
+    color: rgb(0, 0, 0);
+  }
+
+  #heart {
+    width:30%;
+    height: auto;
+    padding: 5px;
+  }
+
+  .recipe_name{
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+  }
+
   #output2__cards {
-    border: 3px solid rgb(255, 89, 0);
+    background-color: rgba(255, 255, 255, 0.567);
+    border: 11px solid rgb(255, 89, 0, 0.4);
+    border-radius: 20px;
     position: absolute;
     right: 18vw;
     top: 17vw;
@@ -160,18 +200,25 @@ body {
   }
   #output2__header {
     position: absolute;
-    right: 18vw;
-    top: 13vw;
+    right: 26vw;
+    top: 22vw;
     font-size: 30px;
     font-family: 'EB Garamond', serif;
     font-weight: bold;
-    color: rgb(181, 127, 44)
-
   }
+
+  #mix {
+    position:absolute;
+    top: 19vw;
+    right: 20vw;
+    /* transform: scale3d(0.22, 0.22, 0.22); */
+  }
+
   #output2__reset {
     position:absolute;
-    top: 10vw;
-    right: 10vw;
+    top: 13vw;
+    right: 11vw;
+    cursor: pointer;
     transform: scale3d(0.22, 0.22, 0.22);
   }
 

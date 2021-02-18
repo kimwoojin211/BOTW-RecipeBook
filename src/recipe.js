@@ -8,32 +8,32 @@ export default class Recipe{
 
   formatIngredients(list)
   {
-      //check if current ingredient has an x2-x4 and slice/add modifier to string
-      // if list is empty or < 1, then loops don't run.
-      for (let i = 1; i <= list.length; i++) { // starts at position 1
-        if(list[i]!=null) //skips index if value is null
+    //check if current ingredient has an x2-x4 and slice/add modifier to string
+    // if list is empty or < 1, then loops don't run.
+    for (let i = 1; i <= list.length; i++) { // starts at position 1
+      if(list[i]!=null) //skips index if value is null
+      {
+        for(let j = 0; j < i; j++) // checks all previous entries for each ingredient in array
         {
-          for(let j = 0; j < i; j++) // checks all previous entries for each ingredient in array
-          {
-            if (list[j] != null) { //skips index if value is null
-              const currIngredient = list[i];
-              const prevIngredients = list[j];
-              if (prevIngredients.slice(0,currIngredient.length) === currIngredient) //duplicate item found
-              {
-                if (prevIngredients.slice(-3, -1) === " x") { //existing multiplier found
-                  const multiplier = parseInt(prevIngredients[prevIngredients.length-1]); //reads last character for number
-                  list[j] = prevIngredients.slice(0,prevIngredients.length-1) + (multiplier+1).toString(); // +1 to multiplier as string
-                }
-                else { // x1 duplicate found
-                  list[j] += " x2";
-                }
+          if (list[j] != null) { //skips index if value is null
+            const currIngredient = list[i];
+            const prevIngredients = list[j];
+            if (prevIngredients.slice(0,currIngredient.length) === currIngredient) //duplicate item found
+            {
+              if (prevIngredients.slice(-3, -1) === " x") { //existing multiplier found
+                const multiplier = parseInt(prevIngredients[prevIngredients.length-1]); //reads last character for number
+                list[j] = prevIngredients.slice(0,prevIngredients.length-1) + (multiplier+1).toString(); // +1 to multiplier as string
+              }
+              else { // x1 duplicate found
+                list[j] += " x2";
+              }
               list[i]=null; //removes current duplicate item and sets value to null
               break; //don't need to check any more previous items. move on to next item.
-              }
             }
           }
         }
       }
+    }
     for (let k = list.length; k < 5; k++) { // if ingredient Array length < 5, push nulls until length = 5
       list.push(null);
     }
@@ -55,7 +55,7 @@ export default class Recipe{
     return null;
   }
 
-fixImageURL(recipeName){ // same as how it was in main.js (besides changed variable names)
+  fixImageURL(recipeName){ // same as how it was in main.js (besides changed variable names)
     recipeName = recipeName.replaceAll(" ", "-");
     recipeName = recipeName.replaceAll("~", "");
     recipeName = recipeName.replaceAll("è", "e");
@@ -75,4 +75,5 @@ fixImageURL(recipeName){ // same as how it was in main.js (besides changed varia
     }
     return recipeName;
   }
+
 }
