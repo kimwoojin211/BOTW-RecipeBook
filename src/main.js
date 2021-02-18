@@ -4,62 +4,46 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import { data } from './ingredients.js';
 import './imports.js';
+import RecipeService from './recipe-service.js';
+import Recipe from './recipe.js';
+
 $(document).ready(function () {
+  let html = `<div class="row ingredient">`;
 
-
-  console.log(document.getElementById("output__natural-materials").innerHTML);
-  let html = "";
-  for (let i = 0; i < 149; i++) {
-    if (i === 0) {
-      html += `<div class="row ingredient">`;
-    }
-    else if (i === 5 || i === 10 || i === 15 || i === 20 || i === 25 || i === 30 || i === 35 || i === 40 || i === 45 || i === 50 || i === 52) {
-      html += `</div>`;
-      document.getElementById("output__natural-materials").innerHTML += html;
-      html = "";
-      html += `<div class="row ingredient">`;
-    }
-    else if (i === 57 || i === 62 || i === 67 || i === 72 || i === 77 || i === 82 || i === 87 || i === 88) {
-      html += `</div>`;
-      document.getElementById("output__creatures").innerHTML += html;
-      html = "";
-      html += `<div class="row ingredient">`;
-    }
-    else if (i === 93 || i === 98 || i === 103 || i === 108 || i === 113 || i === 118 || i === 123 || i === 128 || i === 133 || i === 138 || i === 138) {
-      html += `</div>`;
-      document.getElementById("output__monster-parts").innerHTML += html;
-      html = "";
-      html += `<div class="row ingredient">`;
-    }
-    else if (i === 143 || i === 148) {
-      html += `</div>`;
-      document.getElementById("output__miscellaneous").innerHTML += html;
-      html = "";
-      html += `<div class="row ingredient">`;
-    }
+  for (let i = 0; i < 149; i++) { // OLD CODE AT BOTTOM
     html +=
       `
-      <div id="ingredient${i}" class="ingredient__item grow col-md-2">
-        <div class="ingredient__item_image"><img src="./assets/images/${i + 1}.png">
-        </div>
-        <div class="ingredient__item_name ingredient__item_name--white text-center">
-          <p>${(data[i].name).charAt(0).toUpperCase() + (data[i].name).slice(1, data[i].name.length)}</p>
-        </div>
+    <div id="ingredient${i}" class="ingredient__item grow col-md-2">
+      <div class="ingredient__item_image"><img src="./assets/images/${i + 1}.png">
+      </div>
+      <div class="ingredient__item_name ingredient__item_name--white text-center">
+        <p>${data[i].name}</p>
+      </div>
       <div class="triforce">
         <div class="triangle">
         </div>
       </div>
-      </div>
-      `
+    </div>
+    `
 
+    if (((i <= 49 && i % 5 === 4) || i === 51) || ((i >= 57 && i <= 87 && i % 5 === 1) || i === 87) || (i >= 92 && i % 5 === 2)) {
+      html += `</div>`;
+      if (i <= 51)
+        document.getElementById("output__natural-materials").innerHTML += html;
+      else if (i <= 87)
+        document.getElementById("output__creatures").innerHTML += html;
+      else if (i <= 137)
+        document.getElementById("output__monster-parts").innerHTML += html;
+      else
+        document.getElementById("output__miscellaneous").innerHTML += html;
+      html = "";
+      html += `<div class="row ingredient">`;
+    }
     if (i === 148) {
-      console.log("148th ingredient");
       document.getElementById("output__miscellaneous").innerHTML += html;
       initializeArray();
     }
-
   }
-  // initializeArray();
 
   function initializeArray() {
     //declare empty array
@@ -69,9 +53,7 @@ $(document).ready(function () {
 
     //reset button
     document.getElementById(`output2__reset`).addEventListener("click", function () {
-
       ingredientArray = [];
-      console.log("clicked reset");
       document.getElementById("output2__cards").innerHTML = "";
       document.getElementById("output2").innerHTML = "";
       document.getElementById("output2__header").classList.add("ingredient__item_name--hidden");
@@ -79,64 +61,12 @@ $(document).ready(function () {
     });
 
     document.getElementById(`mix`).addEventListener("click", function () {
-      let promise = new Promise(function (resolve, reject) {
-        let request = new XMLHttpRequest();
-        const url = "https://zelda-cookbook-backend.herokuapp.com/api/v1/recipes";
-        request.onload = function () {
-          if (this.status === 200) {
-            resolve(request.response);
-          } else {
-            reject(request.response);
-          }
-        };
-        request.open("GET", url, true);
-        request.send();
-      });
-
+      let promise = RecipeService.getRecipe();
       promise.then(function (response) {
-        let recipes = JSON.parse(response);
-        let ingredients = ingredientArray;
-        for (let i = ingredients.length; i < 5; i++) {
-          ingredients.push(null);
-        }
-        ingredients = ingredients.sort();
-        console.log(ingredients);
-        let recipematch = null;
-        const bannedRecipes = ["Campfire Egg", "Baked Palm Fruit", "Blueshell Escargot", "Hard Boiled Egg", "Baked Apple", "Roasted Acorn", "Roasted Bass", "Roasted Bird Drumstick", "Roasted Radish", "Seared Gourmet Steak", "Seared Prime Steak", "Seared Steak", "Toasted Hearty Truffle", "Toasty Hylian Shroom"];
-        recipes.forEach(element => {
-          if (!bannedRecipes.includes(element.name)) {
-            let ingredientsList = [element.ingredient1, element.ingredient2, element.ingredient3, element.ingredient4, element.ingredient5];
-            ingredientsList.sort();
-            if (ingredients[0] === ingredientsList[0] && ingredients[1] === ingredientsList[1] && ingredients[2] === ingredientsList[2] && ingredients[3] === ingredientsList[3] && ingredients[4] === ingredientsList[4]) {
-              recipematch = element;
-              return;
-            }
-          }
-        });
-
+        let recipe = new Recipe(JSON.parse(response), ingredientArray);
+        let recipematch = recipe.findMatch();
         if (recipematch != null) {
-          console.log("hi");
-          let recipeName = recipematch.name.replaceAll(" ", "-");
-          recipeName = recipeName.replaceAll("~", "");
-          let urlName = recipeName;
-          const bannedwords = ["Chilly", "Enduring", "Hasty", "Energizing", "Hearty", "Mighty", "Spicy", "Tough", "Electro", "Sneaky"];
-          console.log(recipeName);
-          bannedwords.forEach(element2 => {
-            if (urlName.slice(0, element2.length) === element2 && !urlName.includes("Elixir")) {
-              urlName = recipeName.slice(element2.length + 1);
-            }
-          });
-          urlName = urlName.replaceAll("è", "e");
-          if (urlName === "Milk") {
-            urlName = "Warm-Milk";
-          }
-          if (urlName === "Mushroom-risotto") {
-            urlName = "Mushroom-Risotto";
-          }
-          if (urlName === "Fruit-cake") {
-            urlName === "Fruitcake";
-          }
-          console.log(urlName);
+          let urlName = recipe.fixImageURL(recipematch.name);
           const imageURL = `https://www.guideofthewild.com/assets/images/cookingPot/meals/${urlName}.png`;
           document.getElementById("output2").innerHTML = `
           <div id="recipe" class="recipe col-md-2">
@@ -150,7 +80,10 @@ $(document).ready(function () {
         else {
           document.getElementById("output2").innerHTML = `<p class="error">Error! Recipe not found. Please try again.</p>`;
         }
-      });
+      },
+        function (error) {
+
+        });
     });
     //loop over ingredient names to add eventlistener
     for (let i = 0; i < 149; i++) {
@@ -172,7 +105,7 @@ $(document).ready(function () {
               `<div class="grow col-md-2">
               <div class="grow--big"><img src="./assets/images/${i + 1}.png">
                 <div class="ingredient__item_name ingredient__item_name--grey text-center">
-                  <div class="ingredient__item_name--hidden"> <p>${(data[i].name).charAt(0).toUpperCase() + (data[i].name).slice(1, data[i].name.length)}</p></div> 
+                  <div class="ingredient__item_name--hidden"> <p>${data[i].name}</p></div> 
                   </div>
                 </div>
               </div>
@@ -183,42 +116,9 @@ $(document).ready(function () {
           }, 500);
 
           numInArray++;
-          let searchName = new RegExp(`${document.getElementById(this.id).textContent.trim()}`);
-          const found = ingredientArray.find(value => searchName.test(value));
-          //Check if item is in array otherwise add the first entry
-          if (found === undefined) {
-            ingredientArray.push((document.getElementById(this.id).textContent).trim());
-            return;
-          }
-
-          //check if current ingredient has an x2-x4 and slice/add modifier to string
-          for (let i = 0; i <= ingredientArray.length; i++) {
-            if (ingredientArray[i] === (document.getElementById(this.id).textContent.trim() + " x4")) {
-              ingredientArray[i] = ingredientArray[i].slice(0, (ingredientArray[i].trim().length - 3)) + " x5";
-            }
-            else if (ingredientArray[i] === (document.getElementById(this.id).textContent.trim() + " x3")) {
-              ingredientArray[i] = ingredientArray[i].slice(0, (ingredientArray[i].trim().length - 3)) + " x4";
-            }
-            else if (ingredientArray[i] === (document.getElementById(this.id).textContent.trim() + " x2")) {
-              ingredientArray[i] = ingredientArray[i].slice(0, (ingredientArray[i].trim().length - 3)) + " x3";
-            }
-            else if (ingredientArray[i] === document.getElementById(this.id).textContent.trim()) {
-              ingredientArray[i] += " x2";
-            }
-            else {
-              console.log("not a match");
-            }
-          }
+          ingredientArray.push((document.getElementById(this.id).textContent).trim());
         }
       });
-
     }
-
   }
-
 });
-
-
-
-
-

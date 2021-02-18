@@ -371,7 +371,7 @@ export const data = [
     },
     {
         "id": 32,
-        "name": "Mghty Thistle",
+        "name": "Mighty Thistle",
         "description": "This medicinal plant is known for its sharp thorns and for the fruit it bears. The fruit contains a compound that increases attack power when cooked into a dish.",
         "common_locations": [
             "West Necluda",
