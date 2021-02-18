@@ -1,4 +1,4 @@
-/* eslint-disable indent */
+//* eslint-disable indent */
 export const data = [
     {
         "id": 1,
@@ -635,25 +635,25 @@ export const data = [
     },
     {
         "id": 71,
-        "name": "Winterwing Butterly",
+        "name": "Winterwing Butterfly",
         "description": "The powdery scales of this butterfly's wings cool the air around it. Watching it flutter around snowflakes is a thing of beauty. Cook it with monster parts for a heat-resistant elixir.",
         "category": "creatures"
     },
     {
         "id": 72,
-        "name": "Summerwing Butterly",
+        "name": "Summerwing Butterfly",
         "description": "The powdery scales of this butterfly's wings cool the air around it. Watching it flutter around snowflakes is a thing of beauty. Cook it with monster parts for a heat-resistant elixir.",
         "category": "creatures"
     },
     {
         "id": 73,
-        "name": "Thunderwing Butterly",
+        "name": "Thunderwing Butterfly",
         "description": "This rare butterfly only shows itself when it rains. The organs in its body produce an insulating compound. When made into an elixir, it offers electrical resistance.",
         "category": "creatures"
     },
     {
         "id": 74,
-        "name": "Smotherwing Butterly",
+        "name": "Smotherwing Butterfly",
         "description": "This rare butterfly lives in volcanic regions. Its body contains a heat-resistant liquid, which can be turned into a topical elixir that offers resistance to flames.",
         "category": "creatures"
     },
@@ -1109,4 +1109,3 @@ export const data = [
         "category": "miscellaneous"
     },
 ];
-

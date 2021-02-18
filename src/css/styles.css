@@ -104,14 +104,16 @@ body {
     animation: shrink 1s infinite;
     }
 
-    @keyframes shrink {
-      from {
-        transform: scale(1);
+  @keyframes shrink {
+    from {
+        transform: scale(1) rotate(0deg) scale(2, 0.5);;
+        left:0px;
         /* top: 0px;
         left: 0px; */
       }
       to {
-        transform: scale(0.22);
+        transform: scale(0.22) rotate(720deg);
+        left: 50px;
         /* top: 500px;
         left: 1200px; */
       }
@@ -138,21 +140,22 @@ body {
       }
     }
   #output2 {
-    border: 4px solid blue;
+    border: 2px solid rgb(255, 89, 0);
     position: absolute;
-    right: 13vw;
+    right: 11vw;
+    left: 59vw;
     top: 25vw;
-    width: 30vw;
-    height: 20vw;
+    width: 18vw;
+    height: 15vw;
   }
 
   #output2__cards {
-    border: 4px solid red;
+    border: 3px solid rgb(255, 89, 0);
     position: absolute;
     right: 18vw;
     top: 17vw;
     width: 30vw;
-    height: 5vw;
+    height: 6vw;
     transform: scale3d(0.52, 0.52, 0.52);
   }
   #output2__header {
@@ -167,8 +170,8 @@ body {
   }
   #output2__reset {
     position:absolute;
-    top: 11vw;
-    right: 12vw;
+    top: 10vw;
+    right: 10vw;
     transform: scale3d(0.22, 0.22, 0.22);
   }
 

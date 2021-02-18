@@ -7,34 +7,34 @@ import './imports.js';
 $(document).ready(function () {
 
 
-  console.log(document.getElementById("output__natural-materials").innerHTML)
-  let html = ""
+  console.log(document.getElementById("output__natural-materials").innerHTML);
+  let html = "";
   for (let i = 0; i < 149; i++) {
     if (i === 0) {
       html += `<div class="row ingredient">`;
     }
     else if (i === 5 || i === 10 || i === 15 || i === 20 || i === 25 || i === 30 || i === 35 || i === 40 || i === 45 || i === 50 || i === 52) {
       html += `</div>`;
-      document.getElementById("output__natural-materials").innerHTML += html
-      html = ""
+      document.getElementById("output__natural-materials").innerHTML += html;
+      html = "";
       html += `<div class="row ingredient">`;
     }
     else if (i === 57 || i === 62 || i === 67 || i === 72 || i === 77 || i === 82 || i === 87 || i === 88) {
       html += `</div>`;
-      document.getElementById("output__creatures").innerHTML += html
-      html = ""
+      document.getElementById("output__creatures").innerHTML += html;
+      html = "";
       html += `<div class="row ingredient">`;
     }
     else if (i === 93 || i === 98 || i === 103 || i === 108 || i === 113 || i === 118 || i === 123 || i === 128 || i === 133 || i === 138 || i === 138) {
       html += `</div>`;
-      document.getElementById("output__monster-parts").innerHTML += html
-      html = ""
+      document.getElementById("output__monster-parts").innerHTML += html;
+      html = "";
       html += `<div class="row ingredient">`;
     }
     else if (i === 143 || i === 148) {
       html += `</div>`;
-      document.getElementById("output__miscellaneous").innerHTML += html
-      html = ""
+      document.getElementById("output__miscellaneous").innerHTML += html;
+      html = "";
       html += `<div class="row ingredient">`;
     }
     html +=
@@ -53,8 +53,8 @@ $(document).ready(function () {
       `
 
     if (i === 148) {
-      console.log("148th ingredient")
-      document.getElementById("output__miscellaneous").innerHTML += html
+      console.log("148th ingredient");
+      document.getElementById("output__miscellaneous").innerHTML += html;
       initializeArray();
     }
 
@@ -71,7 +71,7 @@ $(document).ready(function () {
     document.getElementById(`output2__reset`).addEventListener("click", function () {
 
       ingredientArray = [];
-      console.log("clicked reset")
+      console.log("clicked reset");
       document.getElementById("output2__cards").innerHTML = "";
       document.getElementById("output2").innerHTML = "";
       document.getElementById("output2__header").classList.add("ingredient__item_name--hidden");
@@ -134,7 +134,7 @@ $(document).ready(function () {
             urlName = "Mushroom-Risotto";
           }
           if (urlName === "Fruit-cake") {
-            urlName === "Fruitcake"
+            urlName === "Fruitcake";
           }
           console.log(urlName);
           const imageURL = `https://www.guideofthewild.com/assets/images/cookingPot/meals/${urlName}.png`;
@@ -180,7 +180,7 @@ $(document).ready(function () {
           }, 500);
           setTimeout(() => {
             document.getElementById(this.id).classList.remove("shrink");
-          }, 1000);
+          }, 500);
 
           numInArray++;
           let searchName = new RegExp(`${document.getElementById(this.id).textContent.trim()}`);
