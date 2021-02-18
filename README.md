@@ -23,10 +23,23 @@ _This web application uses a proprietary algorithm to allow the user to create r
 
 
 ## Setup/Installation Requirements
+* Click on the green download code button. Click on the clipboard icon.
+* Open your terminal, navigate to the preffered storage location on your desktop.
+* Type git clone and then paste the cloned project.
+* CD into the cloned project.
+* type code . to open the project in your code editor.
+OR
+* Drag cloned project into code editor if your command pallette does not support code .
 
-* _Clone this repository to your desktop_
-* _Navigate to the top level of the directory_
-* _Open js/index.html_
+## Npm Initilization
+* Verify package.json has correct npm packages for needs
+* Modify title on line 18 of webpack.config.js
+* Modify title on line 2 of package.json
+* Modify description on line 19 of package.json
+* Modify title on line 2 if package-lock.json
+* Run ```npm init -y```
+* Run ```npm install```
+* Verify install works by running ```npm run test``` and ```npm run build```
 
 ## Known Bugs
 
