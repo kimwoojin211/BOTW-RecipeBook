@@ -10,7 +10,7 @@ import Recipe from './recipe.js';
 $(document).ready(function () {
   let html = `<div class="row ingredient">`;
 
-  for (let i = 0; i < 149; i++) { // OLD CODE AT BOTTOM
+  for (let i = 0; i < 149; i++) {
     html +=
       `
     <div id="ingredient${i}" class="ingredient__item grow col-md-2">
@@ -46,12 +46,10 @@ $(document).ready(function () {
   }
 
   function initializeArray() {
-    //declare empty array
     let ingredientArray = [];
     let numInArray = 0;
     document.getElementById("output2__header").classList.add("ingredient__item_name--hidden");
 
-    //reset button
     document.getElementById(`output2__reset`).addEventListener("click", function () {
       ingredientArray = [];
       document.getElementById("output2__cards").innerHTML = "";
@@ -80,15 +78,15 @@ $(document).ready(function () {
             </div>`;
         }
         else {
-          document.getElementById("output2").innerHTML = `<p class="error">Error! Recipe not found. Please try again.</p>`;
+          document.getElementById("output2").innerHTML = `
+          <p class="error">Error! Recipe not found.</p>
+          <p class="error">Please try different ingredients.</p>`;
         }
       });
     });
-    //loop over ingredient names to add eventlistener
     for (let i = 0; i < 149; i++) {
 
       document.getElementById(`ingredient${i}`).addEventListener("click", function () {
-        //mqy need to move this check
         if (numInArray === 4) {
           document.getElementById("output2__header").classList.remove("ingredient__item_name--hidden");
         }
@@ -96,7 +94,6 @@ $(document).ready(function () {
 
           setTimeout(() => {
             document.getElementById(this.id).classList.add("shrink");
-            // document.getElementById(this.id).classList.add("flip--y")
           }, 0);
 
           setTimeout(() => {

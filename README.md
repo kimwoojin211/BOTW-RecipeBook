@@ -6,7 +6,6 @@
 [Connor Burgess,](https://github.com/ConnorBurgess)
 [Andy Lawson,](https://github.com/andyL89)
 [Austin Landis,](https://github.com/austinlandiscode)
-[Jer Miller](https://github.com/zwabbe)
 
 ## Technologies Used
 * HTML
@@ -31,10 +30,10 @@ Game utility which allows the user to create recipes with different ingredients 
 
 ## Known Bugs
 
-* Not all recipes are accessible in the API.
+* Not all recipes are accessible in the API. In other words, some recipes that are valid in the actual game may return an error with this program instead.
 
 ## License:
-> *&copy; Woo Jin Kim, Dani Renner, Connor Burgess, Andy Lawson, Austin Landis, Jer Miller, 2021*
+> *&copy; Woo Jin Kim, Dani Renner, Connor Burgess, Andy Lawson, Austin Landis, 2021*
 
 Licensed under [MIT license](https://mit-license.org/)
 
@@ -49,4 +48,4 @@ _Dani Renner (danijrenner@gmail.com)_
 _Connor Burgess (connorburgesscodes@gmail.com)_
 _Andy Lawson (alawson89@gmail.com)_
 _Austin Landis (austinlandiscode@gmail.com)_
-Copyright (c) 2021 Woo Jin Kim, Dani Renner, Connor Burgess, Andy Lawson, Austin Landis, Jer Miller
+Copyright (c) 2021 Woo Jin Kim, Dani Renner, Connor Burgess, Andy Lawson, Austin Landis
