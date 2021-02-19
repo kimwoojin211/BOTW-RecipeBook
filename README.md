@@ -1,53 +1,46 @@
-# Breath of the Wild Recipe Book
+# Breath of the Wild RecipeBook
 
-#### This web application allows the user to create recipes with different ingredients found in the video game "The Legend of Zelda: Breath of the Wild".
-
-#### By:
-_Woo Jin Kim_
-_Dani Renner_
-_Connor Burgess_
-_Andy Lawson_
-_Austin Landis_
-_Jer Miller_
+#### Co-created by:
+[Woo Jin Kim,](https://github.com/kimwoojin211)
+[Dani Renner,](https://github.com/dani-renner)
+[Connor Burgess,](https://github.com/ConnorBurgess)
+[Andy Lawson,](https://github.com/andyL89)
+[Austin Landis,](https://github.com/austinlandiscode)
+[Jer Miller](https://github.com/zwabbe)
 
 ## Technologies Used
-
 * HTML
 * CSS
-* Bootstrap
+* Bootstrap v5
 * JQuery
 * Javascript
+* NPM
+* Webpack
+* ESLint
 
 ## Description
-_This web application uses a proprietary algorithm to allow the user to create recipes via an ingredients list found in the hit video "The Legend of Zelda: Breath of the Wild". It is built with custom HTML and CSS, the backend logic is created using JQuery with some additional vanilla Javascript._
-
+Game utility which allows the user to create recipes with different ingredients found in the video game "The Legend of Zelda: Breath of the Wild". Project utilizes a backend API and local ingredients list object to dynamically display "Breath of the Wild" recipes to user through UI.
 
 ## Setup/Installation Requirements
-* Click on the green download code button. Click on the clipboard icon.
-* Open your terminal, navigate to the preffered storage location on your desktop.
-* Type git clone and then paste the cloned project.
-* CD into the cloned project.
-* type code . to open the project in your code editor.
-OR
-* Drag cloned project into code editor if your command pallette does not support code .
 
-## Npm Initilization
-* Verify package.json has correct npm packages for needs
-* Modify title on line 18 of webpack.config.js
-* Modify title on line 2 of package.json
-* Modify description on line 19 of package.json
-* Modify title on line 2 if package-lock.json
-* Run ```npm init -y```
-* Run ```npm install```
-* Verify install works by running ```npm run test``` and ```npm run build```
+* Clone Repo from GitHub (Link: https://github.com/ConnorBurgess/BOTW-RecipeBook.git)
+* Ensure Node and NPM are installed: [instructions here](https://www.npmjs.com/get-npm)
+* Open command line and navigate to top level directory
+* Input command $ "npm install" (no quotes) in terminal in order to install dependencies
+* View source files in editor of choice or input command $ "npm run start" to view project in live server
 
 ## Known Bugs
 
-* _None_
+* Not all recipes are accessible in the API.
 
-## License
+## License:
+> *&copy; Woo Jin Kim, Dani Renner, Connor Burgess, Andy Lawson, Austin Landis, Jer Miller, 2021*
 
-_MIT_
+Licensed under [MIT license](https://mit-license.org/)
+
+
+## Resources used
+Zelda Cookbook Backend (Link: https://github.com/lexbonder/zelda-cookbook-backend)
 
 ## Contact Information
 
