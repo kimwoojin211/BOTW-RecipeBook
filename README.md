@@ -31,6 +31,7 @@ Game utility which allows the user to create recipes with different ingredients 
 ## Known Bugs
 
 * Not all recipes are accessible in the API. In other words, some recipes that are valid in the actual game may return an error with this program instead.
+* Best used on a desktop browser. Not suitable for mobile devices.
 
 ## License:
 > *&copy; Woo Jin Kim, Dani Renner, Connor Burgess, Andy Lawson, Austin Landis, 2021*
