@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title></title>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#recipes">Recipes</a></li>
+    <li style="float:right"><a href="#about">About</a></li>
+  </ul>
+  <div id="output2__header" class="grow">Cooking pot is full!</div>
+  <div id="output2"> </div>
+  <div><button class="btn btn-dark" id="mix">Cook</button></div>
+  <div id="output2__cards" class="row"> </div>
+  <div id="output2__reset" class="grow--big"> <img src="/BOTW-Recipebook/assets/images/trash.png"> </div>
+  </div>
+
+
+  <div class="carousel__body">
+    <section class="carousel" aria-label="Gallery">
+      <ol class="carousel__viewport">
+        <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper">
+            <h1> Natural Materials (1 - 52)</h1>
+            <div id="output__natural-materials"></div>
+            <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
+            <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+          </div>
+        </li>
+        <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <h1> Creatures (53 - 88)</h1>
+          <div id="output__creatures"></div>
+          <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+        </li>
+        <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <h1> Monster Parts (89 - 138)</h1>
+          <div id="output__monster-parts"></div>
+          <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
+        </li>
+        <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <h1> Miscellaneous (139 - 149)</h1>
+          <div id="output__miscellaneous"></div>
+          <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
+        </li>
+      </ol>
+      <aside class="carousel__navigation">
+        <ol class="carousel__navigation-list">
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>
+          </li>
+        </ol>
+      </aside>
+    </section>
+    <div id="margin">
+    </div>
+<script type="text/javascript" src="/BOTW-Recipebook/bundle.js"></script></body>
+
+</html>
